@@ -28,7 +28,7 @@ parser = None
 class UQXParser(Daemon):
 
     def run(self):
-        jojo = Servicehandler()
+        handler = Servicehandler()
 
 
 # Daemon Methods
@@ -38,14 +38,14 @@ if __name__ == "__main__":
     daemon = UQXParser('/tmp/daemon-example.pid')
     if len(sys.argv) == 2:
             if 'start' == sys.argv[1]:
-                daemon.start()
                 logger.info(time.strftime("Service: "+'%Y_%m_%d %H_%M_%S')+" Starting Daemon")
+                daemon.start()
             elif 'stop' == sys.argv[1]:
-                daemon.stop()
                 logger.info(time.strftime("Service: "+'%Y_%m_%d %H_%M_%S')+" Stopping Daemon")
+                daemon.stop()
             elif 'restart' == sys.argv[1]:
-                daemon.restart()
                 logger.info(time.strftime("Service: "+'%Y_%m_%d %H_%M_%S')+" Restarting Daemon")
+                daemon.restart()
             elif 'status' == sys.argv[1]:
                 if daemon.status():
                     status = " Daemon Running"

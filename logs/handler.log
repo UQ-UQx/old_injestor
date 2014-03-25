@@ -1,0 +1,1624 @@
+INFO:__main__:Service: 2014_03_24 14_26_03  Daemon Stopped
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:JOEY JOJO5
+INFO:servicehandler:JOEY JOJO6
+INFO:servicehandler:JOEY JOJO7
+INFO:__main__:Service: 2014_03_24 14_26_24 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:JOEY JOJO5
+INFO:servicehandler:JOEY JOJO6
+INFO:servicehandler:JOEY JOJO7
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_29_12 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_29_22 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_33_59 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_39_58 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_40_06 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 14_40_39 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_40_40 Starting Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_40_41 Starting Daemon
+INFO:__main__:Service: 2014_03_24 14_42_05 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:__main__:Service: 2014_03_24 14_42_21 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 14_42_52 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:__main__:Service: 2014_03_24 14_43_59 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:__main__:Service: 2014_03_24 14_44_38 Starting Daemon
+INFO:__main__:Service: 2014_03_24 14_44_48 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 14_44_56 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:__main__:Service: 2014_03_24 14_45_10 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:__main__:Service: 2014_03_24 14_45_16 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.NameError'>
+	Value: global name 'sleep' is not defined
+	Traceback: <traceback object at 0x101067dd0>
+INFO:__main__:Service: 2014_03_24 14_59_17 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 14_59_19 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_00_03 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 15_04_02 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_04_17 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_08_20 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_08_38 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_09_52 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_10_24 Stopping Daemon
+INFO:servicehandler:JOEY JOJO
+INFO:servicehandler:JOEY JOJO2
+INFO:servicehandler:JOEY JOJO3
+INFO:servicehandler:JOEY JOJO4
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:servicehandler:LOGGING HELLO
+INFO:__main__:Service: 2014_03_24 15_15_46 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: Servicehandler instance has no attribute 'repeat'
+	Traceback: <traceback object at 0x10c8dfcf8>
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_20_49 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: 'NoneType' object has no attribute 'start_webserver'
+	Traceback: <traceback object at 0x101d58d40>
+INFO:__main__:Service: 2014_03_24 15_21_12 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_21_47 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_26_12 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:LADOJFSIOJDS
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_26_47 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_27_44 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_42_19 Stopping Daemon
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_43_00 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_45_35 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ValueError'>
+	Value: too many values to unpack
+	Traceback: <traceback object at 0x107b5fd88>
+INFO:__main__:Service: 2014_03_24 15_45_43 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 15_45_51 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 15_45_52 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ValueError'>
+	Value: too many values to unpack
+	Traceback: <traceback object at 0x10ac9ed88>
+INFO:__main__:Service: 2014_03_24 15_45_56 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_47_40 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_49_25 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named baseservice
+	Traceback: <traceback object at 0x109c14248>
+INFO:__main__:Service: 2014_03_24 15_50_30 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'posixpath' from '/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.pyc'>
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_51_31 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x105b9b2d8>
+INFO:__main__:Service: 2014_03_24 15_52_22 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x10f6312d8>
+INFO:__main__:Service: 2014_03_24 15_52_27 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x10daf52d8>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'posixpath' from '/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.pyc'>
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 15_52_51 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: Import by filename is not supported.
+	Traceback: <traceback object at 0x1020022d8>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named services.iptocountry.service
+	Traceback: <traceback object at 0x10a554368>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named baseservice
+	Traceback: <traceback object at 0x103739320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: Import by filename is not supported.
+	Traceback: <traceback object at 0x10dbb3320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named services.iptocountry.service
+	Traceback: <traceback object at 0x10e6f0368>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named services.iptocountry
+	Traceback: <traceback object at 0x1104b6320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named services.iptocountry.service
+	Traceback: <traceback object at 0x10a0bf368>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named messages_en
+	Traceback: <traceback object at 0x10362d320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named messages_en
+	Traceback: <traceback object at 0x103253320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named service
+	Traceback: <traceback object at 0x103f75320>
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named services.iptocountry
+	Traceback: <traceback object at 0x10455d320>
+INFO:__main__:Service: 2014_03_24 16_02_09 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_02_27 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_11_24 Stopping Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_11_49 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_11_50 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_12_23 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_12_24 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x1046d82d8>
+INFO:__main__:Service: 2014_03_24 16_13_07 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_13_08 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: 'module' object has no attribute 'service'
+	Traceback: <traceback object at 0x1036012d8>
+INFO:__main__:Service: 2014_03_24 16_13_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'services.iptocountry' from '/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/__init__.pyc'>
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_14_20 Starting Daemon
+INFO:__main__:Service: 2014_03_24 16_14_22 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_14_22 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: import_module() takes at most 2 arguments (5 given)
+	Traceback: <traceback object at 0x1018f62d8>
+INFO:__main__:Service: 2014_03_24 16_15_27 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_15_28 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'services.iptocountry.service' from '/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.pyc'>
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_15_37 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_15_38 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x1093ce320>
+INFO:__main__:Service: 2014_03_24 16_15_45 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_16_01 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_16_02 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.NameError'>
+	Value: global name 'service' is not defined
+	Traceback: <traceback object at 0x100e3c320>
+INFO:__main__:Service: 2014_03_24 16_16_13 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_16_14 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: 'module' object has no attribute 'service'
+	Traceback: <traceback object at 0x10b41e320>
+INFO:__main__:Service: 2014_03_24 16_17_12 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_17_13 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'services.iptocountry.service' from '/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.pyc'>
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_17_17 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_17_31 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_17_32 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'services.iptocountry.service' from '/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.pyc'>
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_17_43 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_17_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'module' object is not callable
+	Traceback: <traceback object at 0x10f272320>
+INFO:__main__:Service: 2014_03_24 16_18_06 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_18_07 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named service
+	Traceback: <traceback object at 0x1092b92d8>
+INFO:__main__:Service: 2014_03_24 16_18_15 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_20_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:<module 'services.iptocountry.service' from '/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.py'>
+INFO:servicehandler:IMPORTED
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_20_38 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_20_58 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:__main__:Service: 2014_03_24 16_21_13 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_21_29 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_21_30 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:__main__:Service: 2014_03_24 16_22_09 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_22_10 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_22_17 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_22_33 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_22_34 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_22_46 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_23_20 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_23_26 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_23_33 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: Servicehandler instance has no attribute 'log'
+	Traceback: <traceback object at 0x10dbd0320>
+INFO:__main__:Service: 2014_03_24 16_23_48 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.TypeError'>
+	Value: 'Logger' object is not callable
+	Traceback: <traceback object at 0x108486320>
+INFO:__main__:Service: 2014_03_24 16_23_55 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_23_58 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_24_12 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_24_22 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_24_23 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_24_31 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_24_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_24_51 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_27_02 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_27_12 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_27_18 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_27_21 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_27_28 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_27_32 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_28_15 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_28_20 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_28_25 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_28_28 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_28_37 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_28_47 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_31_50 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: 'Thread' object has no attribute 'config'
+	Traceback: <traceback object at 0x1015fc3b0>
+INFO:__main__:Service: 2014_03_24 16_31_56 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_32_03 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_32_10 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_33_00 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:MAIN THREAD
+INFO:__main__:Service: 2014_03_24 16_33_04 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_33_19 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.AttributeError'>
+	Value: Servicehandler instance has no attribute 'servicemodules'
+	Traceback: <traceback object at 0x104425440>
+INFO:__main__:Service: 2014_03_24 16_33_36 Starting Daemon
+INFO:__main__:Service: 2014_03_24 16_33_40 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_33_41 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:__main__:Service: 2014_03_24 16_33_46 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_34_01 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:__main__:Service: 2014_03_24 16_34_21 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_34_29 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:YES, EXISTS
+INFO:servicehandler:STARTING <Thread(Thread-1, initial)>
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:__main__:Service: 2014_03_24 16_34_52 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_36_06 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_36_07 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.UnboundLocalError'>
+	Value: local variable 'servicethread' referenced before assignment
+	Traceback: <traceback object at 0x10e3d13b0>
+INFO:__main__:Service: 2014_03_24 16_36_24 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.pySTARTING 
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:__main__:Service: 2014_03_24 16_37_14 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_37_15 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:/Users/uqadekke/Sites/sources/injestor/src/injestor/services/iptocountry/service.pySTARTING 
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:__main__:Service: 2014_03_24 16_37_26 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_37_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:.DS_Store
+INFO:servicehandler:__init__.py
+INFO:servicehandler:__init__.pyc
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:__main__:Service: 2014_03_24 16_37_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_38_40 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_38_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING AWESOME BABY
+INFO:__main__:Service: 2014_03_24 16_39_13 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_41_34 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_41_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:servicehandler:MAIN THREAD
+INFO:servicehandler:TESTING WE ARE RUNNING BABY
+INFO:__main__:Service: 2014_03_24 16_41_41 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_42_06 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_42_10 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_43_57 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_44_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_44_56 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_45_10 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_45_12 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_45_22 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_45_22 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_45_34 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_45_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_46_01 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_46_02 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_46_53 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_46_53 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_47_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_47_56 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_48_24 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_48_25 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_48_44 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_48_45 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_49_10 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_49_11 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_49_46 Starting Daemon
+INFO:__main__:Service: 2014_03_24 16_49_48 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_49_48 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_50_10 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_50_11 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_50_27 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_50_27 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_50_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_50_55 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_51_05 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_51_06 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_51_44 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_51_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_52_05 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_52_06 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_52_20 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_52_21 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_52_33 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_52_34 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_52_42 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_52_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_53_58 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_53_58 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_54_22 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_54_23 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_54_27 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_54_58 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_54_59 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 16_55_47 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_55_48 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 16_56_26 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 16_56_27 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:services.iptocountry.baseservice:RUNNING
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x10067ea28>
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 17_37_17 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_37_18 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 17_40_58 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_40_59 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 17_41_09 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_41_10 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:services.iptocountry.baseservice:RUNNING
+INFO:__main__:Service: 2014_03_24 17_42_27 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_42_28 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_42_45 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_42_46 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_43_16 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_43_17 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_43_34 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_43_34 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_44_18 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_44_19 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_44_43 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_44_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_45_49 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_48_20 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_49_14 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_49_14 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_49_33 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_49_33 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_50_17 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_50_17 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_50_48 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_50_49 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_51_11 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_51_12 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_51_54 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_51_55 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_52_41 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_52_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_53_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_53_56 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_54_01 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_55_07 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_55_09 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_24 17_55_15 Stopping Daemon
+INFO:__main__:Service: 2014_03_24 17_55_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x10244da28>
+INFO:__main__:Service: 2014_03_25 11_08_33 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_08_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named clickstream.service
+	Traceback: <traceback object at 0x10a91ba28>
+INFO:__main__:Service: 2014_03_25 11_10_12 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_10_13 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_10_24 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_10_31 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_10_33 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named clickstream.service
+	Traceback: <traceback object at 0x10d30fa28>
+INFO:__main__:Service: 2014_03_25 11_10_51 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_10_53 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named baseservice
+	Traceback: <traceback object at 0x10a216a28>
+INFO:__main__:Service: 2014_03_25 11_11_01 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_29 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_30 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_11_34 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_40 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_41 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named baseservice
+	Traceback: <traceback object at 0x1097f25a8>
+INFO:__main__:Service: 2014_03_25 11_11_45 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_55 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_11_56 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.ImportError'>
+	Value: No module named baseservice
+	Traceback: <traceback object at 0x1078765a8>
+INFO:__main__:Service: 2014_03_25 11_12_00 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_12_05 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_12_07 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_12_19 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_12_21 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_12_28 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_12_29 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_13_01 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_14_36 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_14_37 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 11_14_40 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_15_20 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 11_15_21 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
