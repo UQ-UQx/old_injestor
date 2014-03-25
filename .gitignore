@@ -1,3 +1,4 @@
 *.DS_Store
 [Ii]gnore*/
 *.pyc
+lib/*
