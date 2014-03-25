@@ -1829,3 +1829,39 @@ INFO:services.iptocountry.baseservice:STARTING
 INFO:servicehandler:Starting Web Server
 INFO:servicehandler:Sleeping main thread
 INFO:__main__:Service: 2014_03_25 16_08_34 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_10_13 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_10_15 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 16_10_37 Starting Daemon
+INFO:__main__:Service: 2014_03_25 16_10_41 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_10_50 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 16_10_56 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_12_16 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_12_18 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x102cf8560>
