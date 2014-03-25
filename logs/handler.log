@@ -1622,3 +1622,209 @@ INFO:servicehandler:Starting module iptocountry
 INFO:services.iptocountry.baseservice:STARTING
 INFO:servicehandler:Starting Web Server
 INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x103a35560>
+INFO:__main__:Service: 2014_03_25 12_17_07 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 12_18_41 Restarting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 12_18_48 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 12_18_49 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 12_20_06 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 12_20_07 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 12_20_41 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 12_20_42 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 12_32_44 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 12_32_45 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_07_36 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_07_40 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module example
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_07_56 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_08_03 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_13_15 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_13_24 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_14_25 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_14_31 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_18_33 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_18_39 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 13_29_41 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 13_29_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 14_32_32 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 14_32_35 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 14_43_00 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 14_43_01 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 14_43_27 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 14_43_28 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 15_07_15 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 15_07_16 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 15_10_14 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 15_10_15 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 15_11_12 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 15_11_13 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module example
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_03_25 15_16_31 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 15_16_32 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x10cb62560>
+INFO:__main__:Service: 2014_03_25 16_00_39 Stopping Daemon
+INFO:__main__:Service: 2014_03_25 16_00_44 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread

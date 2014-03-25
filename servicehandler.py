@@ -52,6 +52,7 @@ class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         response = {}
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
+        self.send_header("Access-Control-Allow-Origin", "*")
         self.end_headers()
         if self.path == "/status":
             status = {}

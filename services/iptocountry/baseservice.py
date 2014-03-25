@@ -40,7 +40,7 @@ class BaseService(object):
             self.run()
             self.status['action'] = 'sleeping'
             self.status['lastawake'] = time.strftime('%Y-%m-%d %H:%M:%S')
-            time.sleep(600)
+            time.sleep(60)
 
     def setup(self):
         raise Exception("You are required to create a setup method")
