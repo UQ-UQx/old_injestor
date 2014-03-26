@@ -1865,3 +1865,34 @@ ERROR:__main__:Fatal Error
 	Type: <type 'exceptions.RuntimeError'>
 	Value: maximum recursion depth exceeded
 	Traceback: <traceback object at 0x102cf8560>
+INFO:__main__:Service: 2014_03_26 13_22_35  Daemon Running
+INFO:__main__:Service: 2014_03_26 13_22_37 Stopping Daemon
+INFO:__main__:Service: 2014_03_26 13_22_38 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x10f22c560>
+INFO:__main__:Service: 2014_03_26 15_04_27  Daemon Running
+INFO:__main__:Service: 2014_03_26 15_04_30 Stopping Daemon
+INFO:__main__:Service: 2014_03_26 15_04_32 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting module userdetails
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x10b243560>
