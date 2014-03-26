@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 #Web server
 ServerClass  = BaseHTTPServer.HTTPServer
 Protocol     = "HTTP/1.0"
-ServerPort   = 8899
+ServerPort   = 8850
 TestCounter  = 0
 
 class ServiceLoader():
@@ -88,7 +88,7 @@ class Servicehandler():
 
     def setup_webserver(self):
         ResponseHandler.servicehandler = self
-        server_address = ('127.0.0.1', ServerPort)
+        server_address = ('0.0.0.0', ServerPort)
         ResponseHandler.protocol_version = Protocol
         self.server = ThreadedHTTPServer(server_address, ResponseHandler)
         logger.info("Starting Web Server")

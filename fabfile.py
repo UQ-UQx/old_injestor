@@ -17,7 +17,7 @@ def prepare():
 
 def deploy():
     with hide('output', 'running', 'warnings'), settings(warn_only=True):
-        remote_vc("%s test/injestor.py stop" % env.remote_code_dir,"Stopping Injestor")
+        remote_vc("%s/injestor.py stop" % env.remote_code_dir,"Stopping Injestor")
 
     with hide('output', 'running', 'warnings'), settings(warn_only=True):
         if run("test -d %s" % env.remote_code_dir).failed:
@@ -26,7 +26,7 @@ def deploy():
             sudo("git clone https://simultech@github.com/UQ-UQx/"+env.gitname+".git %s" % env.remote_code_dir)
     with cd(env.remote_code_dir):
         remote_vc("git pull", "Pulling from git",True)
-        remote_vc("%s test/injestor.py start" % env.remote_code_dir,"Starting Injestor")
+        remote_vc("%s/injestor.py start" % env.remote_code_dir,"Starting Injestor")
 
 
 def create():
