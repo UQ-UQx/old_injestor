@@ -16,8 +16,8 @@ class SQLImport(baseservice.BaseService):
 
     usemongo = False
     sqluser = 'root'
-    sqlpass = ''
-    sqldbname = 'uqxdump'
+    sqlpass = 'r3m0teAXS'
+    sqldbname = 'mysql'
     sqldb = None
     sqltablename = ""
 
