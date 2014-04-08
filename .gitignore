@@ -6,3 +6,6 @@
 *-analytics.json
 *.mongo
 *.tar.gz
+data/
+incoming/
+finished/
