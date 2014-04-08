@@ -30,6 +30,12 @@ class Example(baseservice.BaseService):
         self.status['name'] = "Access Logs Parser"
         self.initialize()
 
+    def filelength(self):
+        for i, l in enumerate(self.file):
+            pass
+        self.file.seek(0)
+        return i + 1
+
     def setaction(self,theaction):
         if(theaction == 'stopped'):
             self.status['status'] = 'stopped'
@@ -47,7 +53,9 @@ class Example(baseservice.BaseService):
         self.setaction('test running')
         self.status['status'] = 'running'
         while self.load_incoming_file():
-            print self.filename
+            self.setaction("loading access log "+self.filename)
+            self.status['progress']['total'] = str(self.filelength())
+            self.status['progress']['current'] = 0
             self.parselines(self.parseline)
             self.movetofinish()
 
@@ -55,7 +63,7 @@ class Example(baseservice.BaseService):
         try:
             log_line_data = self.parser(line)
             self.insert(log_line_data)
-            print log_line_data
+            self.status['progress']['current'] += 1
         except Exception, e:
             print "BAD LINE"+str(e)
 
