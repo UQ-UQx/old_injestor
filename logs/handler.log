@@ -1934,3 +1934,7 @@ INFO:servicehandler:Starting module sqlimport
 INFO:servicehandler:Starting module userdetails
 INFO:servicehandler:Starting Web Server
 INFO:servicehandler:Sleeping main thread
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x1015167e8>
