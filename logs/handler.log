@@ -1896,3 +1896,41 @@ ERROR:__main__:Fatal Error
 	Type: <type 'exceptions.RuntimeError'>
 	Value: maximum recursion depth exceeded
 	Traceback: <traceback object at 0x10b243560>
+INFO:__main__:Service: 2014_04_08 13_00_57 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module fileaccesslog
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting module sqlimport
+INFO:servicehandler:Starting module userdetails
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_04_08 13_01_09 Stopping Daemon
+INFO:__main__:Service: 2014_04_08 13_01_49 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module fileaccesslog
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting module sqlimport
+INFO:servicehandler:Starting module userdetails
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:__main__:Service: 2014_04_08 13_02_27 Stopping Daemon
+INFO:__main__:Service: 2014_04_08 13_02_28 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module example
+INFO:servicehandler:Starting module fileaccesslog
+INFO:servicehandler:Starting module iptocountry
+INFO:services.iptocountry.baseservice:STARTING
+INFO:servicehandler:Starting module sqlimport
+INFO:servicehandler:Starting module userdetails
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread

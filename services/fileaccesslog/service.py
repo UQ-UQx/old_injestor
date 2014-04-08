@@ -7,7 +7,7 @@ import apache_log_parser
 
 basepath = os.path.dirname(__file__)
 
-class Example(baseservice.BaseService):
+class Fileaccesslog(baseservice.BaseService):
 
     status = {
         'name':'unknown',
@@ -69,10 +69,10 @@ class Example(baseservice.BaseService):
 
 
 def name():
-    return str("example")
+    return str("fileaccesslog")
 
 def status():
-    return Example.status
+    return Fileaccesslog.status
 
 def runservice():
-    return Example()
+    return Fileaccesslog()
