@@ -37,6 +37,12 @@ class SQLImport(baseservice.BaseService):
         self.status['name'] = "SQL Importer"
         self.initialize()
 
+    def filelength(self):
+        for i, l in enumerate(self.file):
+            pass
+        self.file.seek(0)
+        return i + 1
+
     def setaction(self,theaction):
         if(theaction == 'stopped'):
             self.status['status'] = 'stopped'
@@ -121,15 +127,22 @@ class SQLImport(baseservice.BaseService):
                 self.movetofinish()
                 continue
             columns = []
+            self.setaction('importing file '+self.filename)
+            self.status['progress']['total'] = str(self.filelength())
+            self.status['progress']['current'] = 0
             for line in self.file:
                 columns = line.split("\t")
                 break
             if self.createtableandvalid(self.filename,columns):
+                print "importing stuff"
                 self.parselines(self.parseline)
             self.movetofinish()
+            print "finishedfile"
+        print "done"
 
     def parseline(self,line):
         zhash = hashlib.sha256(line).hexdigest()
+        self.status['progress']['current'] += 1
         line = line.replace("\n","")
         line = line.replace('"',"''")
         data = line.split("\t")
