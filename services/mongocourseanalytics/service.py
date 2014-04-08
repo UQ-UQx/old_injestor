@@ -21,7 +21,7 @@ class Mongocourseanalytics(baseservice.BaseService):
     }
 
     def __init__(self):
-        self.status['name'] = "Example"
+        self.status['name'] = "Mongo Course Analytics"
         self.initialize()
 
     def setaction(self,theaction):
