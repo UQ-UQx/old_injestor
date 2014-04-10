@@ -8,6 +8,10 @@ basepath = os.path.dirname(__file__)
 
 class Clickstream(baseservice.BaseService):
 
+    dbname = "logs"
+    collectionname = "clickstream"
+    tmp_collectionname = "clickstream_tmp"
+
     status = {
         'name':'unknown',
         'status':'stopped',
@@ -37,8 +41,31 @@ class Clickstream(baseservice.BaseService):
         self.log("info", "SETUP")
 
     def run(self):
-        self.setaction('running')
-        self.log("info", "RUNNING")
+        self.setaction('starting run')
+        self.status['status'] = 'running'
+        #load a file
+        self.status['progress']['total'] = str(self.numfiles())
+        self.status['progress']['current'] = 1
+        while self.load_incoming_file():
+            valid = False
+            try:
+                if self.filename.find('.log') != -1:
+                    valid = True
+                if self.filepath.find('-edge-') != -1:
+                    valid = False
+            except:
+                print "BAD"
+                pass
+            if valid:
+                cmd = "mongoimport --db "+self.dbname+" --collection "+self.tmp_collectionname+" < "+self.filepath+"/"+self.filename
+                os.system(cmd)
+                print "Importing "+self.filepath+"/"+self.filename+" "+str(self.status['progress']['current'])+" out of "+str(self.status['progress']['total'])
+            self.movetofinish(date=False)
+            self.status['progress']['current'] += 1
+        mongoremove = "mongo "+self.dbname+" --eval \"db."+self.collectionname+".remove()\""
+        os.system(mongoremove)
+        mongomove = "mongo "+self.dbname+" --eval \"db."+self.tmp_collectionname+".renameCollection('"+self.collectionname+"')\""
+        os.system(mongomove)
 
 def name():
     return str("clickstream")

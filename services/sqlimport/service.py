@@ -118,7 +118,7 @@ class SQLImport(baseservice.BaseService):
         return isvalid
 
     def run(self):
-        self.setaction('test running')
+        self.setaction('starting run')
         self.status['status'] = 'running'
         #load a file
         while self.load_incoming_file():
