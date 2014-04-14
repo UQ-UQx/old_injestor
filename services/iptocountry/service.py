@@ -14,52 +14,30 @@ basepath = os.path.dirname(__file__)
 
 class Iptocountry(baseservice.BaseService):
 
-    dbname = "logs"
-    collectionname = "zz"
-    #hashfields = ['remote_host', 'request_url', 'time_recieved_isoformat','request_first_line']
-    #servicename = 'filelogparser'
+    version = "testing"
+    mongo_dbname = 'logs'
+    mongo_enabled = True
+
     geoReader = None
     ipfield = 'ip'
 
-    status = {
-        'name':'unknown',
-        'status':'stopped',
-        'action':'stopped',
-        'actiontime':'000-00-00 00:00:00',
-        'progress':{
-            'current':'0',
-            'total':'0'
-        },
-        'lastawake':'0000-00-00 00:00:00'
-    }
-
     def __init__(self):
         self.status['name'] = "IP To Country"
-        self.log("info", "STARTING")
         self.initialize()
 
     def setup(self):
         self.geoReader = geoip2.database.Reader(basepath+'/lib/GeoIP2-Country.mmdb')
 
-
-    def setaction(self,theaction):
-        if(theaction == 'stopped'):
-            self.status['status'] = 'stopped'
-        else:
-            self.status['status'] = 'running'
-        self.status['action'] = str(theaction)
-        self.status['actiontime'] = time.strftime('%Y-%m-%d %H:%M:%S')
-
     def run(self):
-        self.status['status'] = 'running'
-        for collection in self.db.collection_names():
+        for collection in self.mongo_db.collection_names():
             self.setaction('checking collections')
-            self.collection = self.db[collection]
-            if self.collection:
+            self.mongo_collection = self.mongo_db[collection]
+            if self.mongo_collection:
                 self.setaction('checking collection '+collection)
-                toupdates = self.collection.find({ self.ipfield : { '$exists' : True }, 'country' : { '$exists' :
+                toupdates = self.mongo_collection.find({ self.ipfield : { '$exists' : True }, 'country' : { '$exists' :
                                                                                                            False }} )
-                print "TOTAL ENTRIES MISSING FOR ("+self.ipfield+"): "+str(toupdates.count())+" FOR "+str(collection)
+                self.log('info',"checked collection ("+self.ipfield+"): "+str(toupdates.count())+" FOR "+str(
+                    collection))
                 self.status['progress']['total'] = str(toupdates.count())
                 self.status['progress']['current'] = 0
 
@@ -69,11 +47,11 @@ class Iptocountry(baseservice.BaseService):
                         try:
                             country = self.geoReader.country(toupdate[self.ipfield])
                             isocountry = country.country.iso_code
-                            self.collection.update({"_id": toupdate['_id']}, {"$set": {"country": isocountry}})
+                            self.mongo_collection.update({"_id": toupdate['_id']}, {"$set": {"country": isocountry}})
                         except AddressNotFoundError:
                             pass
                     else:
-                        self.collection.update({"_id": ObjectId(toupdate['_id'])}, {"$set": {"country": ""}})
+                        self.mongo_collection.update({"_id": ObjectId(toupdate['_id'])}, {"$set": {"country": ""}})
 
 
 
