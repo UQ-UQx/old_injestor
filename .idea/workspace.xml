@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/mongoimport.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/services/mongoimport/data/finished/2014_04_08_UQx-Think101x-1T2014-prod.mongo" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/iptocountry/logs/debug.log" afterPath="$PROJECT_DIR$/services/iptocountry/logs/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="injestor.iws" />
@@ -64,7 +53,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="81" selection-end="81" vertical-scroll-proportion="0.123176664" vertical-offset="0" max-vertical-offset="1234">
+            <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.030794166" vertical-offset="0" max-vertical-offset="1234">
               <folding />
             </state>
           </provider>
@@ -547,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="81" selection-end="81" vertical-scroll-proportion="0.123176664" vertical-offset="0" max-vertical-offset="1234">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.030794166" vertical-offset="0" max-vertical-offset="1234">
           <folding />
         </state>
       </provider>
