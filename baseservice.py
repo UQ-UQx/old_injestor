@@ -4,11 +4,9 @@ import importlib
 import logging
 import time
 import os
-import datetime
 import MySQLdb
 from pymongo import MongoClient
 import hashlib
-import pymongo
 
 basepath = os.path.dirname(__file__)
 
@@ -17,21 +15,22 @@ formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 logging.basicConfig(filename=basepath+'/logs/debug.log', level=logging.DEBUG, formatter=formatter)
 logger = logging.getLogger(__name__)
 
+
 #Base Service Class
 class BaseService(object):
 
     # Status for the Rest API
     version = "development"
     status = {
-        'name':'unknown',
-        'status':'stopped',
-        'action':'stopped',
-        'actiontime':'000-00-00 00:00:00',
-        'progress':{
-            'current':'0',
-            'total':'0'
+        'name': 'unknown',
+        'status': 'stopped',
+        'action': 'stopped',
+        'actiontime': '000-00-00 00:00:00',
+        'progress': {
+            'current': '0',
+            'total': '0'
         },
-        'lastawake':'0000-00-00 00:00:00'
+        'lastawake': '0000-00-00 00:00:00'
     }
 
     #Attributes for Mongo
@@ -51,10 +50,14 @@ class BaseService(object):
     sql_db = None
     sql_tablename = ''
 
+    #Loading from files inside data
+    file = None
+    filename = ""
+    filepath = ""
 
     logformat = "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
     backuplogformat = "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
-    file = None
+
     parser = None
     client = None
     db = None
@@ -65,20 +68,21 @@ class BaseService(object):
     servicename = 'baseservice'
 
     #Private
-    filename = ""
+
     path_incoming = basepath+'/data/incoming'
     path_finished = basepath+'/data/finished'
     objects_added = 0
 
     # Starting the base service
     def initialize(self):
+        self.set_service_name()
         self.log("info", "Starting service")
         if self.mongo_enabled:
             self.log("info", "Loading Mongo")
-            self.connect_to_mongo(self.mongo_dbname,self.mongo_collectionname)
+            self.connect_to_mongo(self.mongo_dbname, self.mongo_collectionname)
         if self.sql_enabled:
             self.log("info", "Loading MySQL")
-            self.connect_to_sql(self.sql_dbname,True)
+            self.connect_to_sql(self.sql_dbname, True)
         self.log("info", "Running Setup")
         self.setaction('loading')
         self.setup()
@@ -102,7 +106,7 @@ class BaseService(object):
                         if self.mongo_collection:
                             self.mongo_collectionname = collection_name
             return True
-        except pymongo.errors.ConnectionFailure, e:
+        except Exception, e:
             self.log("error", "Could not connect to MongoDB: %s" % e)
         return False
 
@@ -124,6 +128,18 @@ class BaseService(object):
                     return False
         return False
 
+    # Does a query on the active MySQL Database
+    def doquery(self, query, commit=False):
+        cur = self.sql_db.cursor()
+        cur.execute(query)
+        for row in cur.fetchall():
+            print row[0]
+        if commit:
+            self.sql_db.commit()
+
+    # Gets the name of the service based on its class name
+    def set_service_name(self):
+        self.servicename = str(self.__class__.__name__).lower()
 
     # Need to override setup or bad
     def setup(self):
@@ -134,53 +150,81 @@ class BaseService(object):
         raise Exception("You are required to create a run method")
 
     # Log to screen and to file
-    def log(self, type, text):
-        log = time.strftime('%Y_%m_%d %H_%M_%S')+" "+str(self.__class__.__name__)+": ("+type+") "+text
+    def log(self, logtype, text):
+        log = time.strftime('%Y_%m_%d %H_%M_%S')+" "+self.servicename+": ("+logtype+") "+text
         print log
         logger.info(log)
 
     # Sets the action for the Rest API
-    def setaction(self,theaction):
-        if(theaction == 'stopped'):
+    def setaction(self, theaction):
+        if theaction == 'stopped':
             self.status['status'] = 'stopped'
         else:
             self.status['status'] = 'running'
         self.status['action'] = str(theaction)
         self.status['actiontime'] = time.strftime('%Y-%m-%d %H:%M:%S')
 
-
+    # Loads an incoming file from the incoming data path for the module
     def load_incoming_file(self):
+        filepaths = getdatafilepaths(self.servicename)
         loaded = False
-        for dirname, dirnames, filenames in os.walk(self.path_incoming):
+        for dirname, dirnames, filenames in os.walk(filepaths['incoming']):
             for filename in filenames:
                 #open an incoming file
-                self.filename = filename
                 self.file = open(os.path.join(dirname, self.filename))
+                self.filename = filename
+                self.filepath = dirname
                 if self.file:
                     loaded = True
         return loaded
 
-    def movetofinish(self):
+    # Counts the number of lines within the open file
+    def numlines(self):
+        i = 0
+        for i, l in enumerate(self.file):
+            pass
+        self.file.seek(0)
+        return i + 1
+
+    # Counts the number of files within incoming
+    def numfiles(self):
+        count = 0
+        for dirname, dirnames, filenames in os.walk(self.path_incoming):
+            for _ in filenames:
+                count += 1
+        return count
+
+    # Moves the open file from incoming to finished, including subdirectories
+    def movetofinish(self, prepend_date=False):
         try:
             self.file.close()
-        except Exception:
-            self.log("error","File is already closed")
-        os.rename(os.path.join(self.path_incoming, self.filename),os.path.join(self.path_finished, time.strftime(
-            '%Y_%m_%d')+"_"+self.filename))
+        except IOError:
+            self.log("error", "File is already closed")
+        newfilename = self.filename
+        finpath = self.filepath.replace("incoming", "finished", 1)
+        if not os.path.exists(finpath):
+            os.makedirs(finpath)
+        if prepend_date:
+            newfilename = time.strftime('%Y_%m_%d')+"_"+newfilename
+        os.rename(os.path.join(self.filepath, self.filename), os.path.join(finpath, newfilename))
+        if os.listdir(self.filepath) == [] and self.filepath != self.path_incoming:
+            os.rmdir(self.filepath)
 
-    def parselines(self,func=None):
+    # Loops through the open file and calls the supplied function
+    def parselines(self, func=None):
         with self.file as infile:
             for line in infile:
                 func(line)
 
-    def insert(self,obj):
-        zhash = self.servicename+"_"
+    # Inserts an object into the Mongo Database
+    def insert(self, obj):
+        field_hash = self.servicename+"_"
         for field in self.hashfields:
             if obj[field]:
-                zhash += obj[field]+"_"
-        zhash = hashlib.sha256(zhash).hexdigest()
-        obj['hash'] = zhash
-        done = self.collection.update({"hash":zhash},obj,True)
+                field_hash += obj[field]+"_"
+        field_hash = hashlib.sha256(field_hash).hexdigest()
+        obj['hash'] = field_hash
+        done = self.mongo_collection.update({"hash": field_hash}, obj, True)
         if done['updatedExisting']:
             pass
         else:
@@ -188,41 +232,45 @@ class BaseService(object):
 
 # Static methods
 
+
 # Load a module
-def loadModule(moduleName):
-    mod = importlib.import_module('services.'+moduleName+'.service')
-    datadirs = ['incoming','process','finished']
-    mkdatadirsifneeded(moduleName)
-    mklogifneeded(moduleName)
+def load_module(module_name):
+    mod = importlib.import_module('services.'+module_name+'.service')
+    mkdatadirsifneeded(module_name)
+    mklogifneeded(module_name)
     return mod
 
+
 # Create a list of directories within the base path
-def mkdatadirsifneeded(moduleName):
-    dirs = getdatafilepaths(moduleName)
-    for dir in dirs:
-        if not os.path.exists(dirs[dir]):
+def mkdatadirsifneeded(module_name):
+    dirs = getdatafilepaths(module_name)
+    for the_dir in dirs:
+        if not os.path.exists(dirs[the_dir]):
             try:
-                os.makedirs(dirs[dir])
-            except:
-                print "Error: Could not create path "+dirs[dir]
+                os.makedirs(dirs[the_dir])
+            except IOError:
+                print "Error: Could not create path "+dirs[the_dir]
                 pass
 
+
 # Create log file in the correct directory
-def mklogifneeded(moduleName):
-    with open(getlogfilepath(moduleName), 'a'):
-        os.utime(getlogfilepath(moduleName), None)
+def mklogifneeded(module_name):
+    with open(getlogfilepath(module_name), 'a'):
+        os.utime(getlogfilepath(module_name), None)
+
 
 # Get the log file path
-def getlogfilepath(moduleName):
-    basepath = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(basepath,'logs',moduleName+'.log')
+def getlogfilepath(module_name):
+    thebasepath = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(thebasepath, 'logs', module_name+'.log')
     return path
 
+
 # Get the data paths
-def getdatafilepaths(moduleName):
+def getdatafilepaths(module_name):
     paths = {}
-    basepath = os.path.dirname(os.path.abspath(__file__))
-    paths['incoming'] = os.path.join(basepath,'data',moduleName,'incoming')
-    paths['process'] = os.path.join(basepath,'data',moduleName,'process')
-    paths['finished'] = os.path.join(basepath,'data',moduleName,'finished')
+    thebasepath = os.path.dirname(os.path.abspath(__file__))
+    paths['incoming'] = os.path.join(thebasepath, 'data', module_name, 'incoming')
+    paths['process'] = os.path.join(thebasepath, 'data', module_name, 'process')
+    paths['finished'] = os.path.join(thebasepath, 'data', module_name, 'finished')
     return paths

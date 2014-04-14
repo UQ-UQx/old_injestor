@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 else:
     moduleName = sys.argv[1]
     try:
-        mod = baseservice.loadModule(moduleName)
+        mod = baseservice.load_module(moduleName)
         print "Test run of service: "+moduleName
         print mod.runservice()
         print "Finished test run"
