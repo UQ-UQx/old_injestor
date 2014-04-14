@@ -2,3 +2,10 @@
 [Ii]gnore*/
 *.pyc
 *.mmdb
+*.sql
+*-analytics.json
+*.mongo
+*.tar.gz
+data/
+incoming/
+finished/

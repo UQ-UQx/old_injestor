@@ -62,3 +62,4 @@ INFO:servicehandler:IMPORTED
 INFO:servicehandler:iptocountry
 INFO:servicehandler:Starting Web Server
 INFO:servicehandler:Sleeping main thread
+INFO:baseservice:STARTING

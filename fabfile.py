@@ -23,7 +23,7 @@ def deploy():
         if run("test -d %s" % env.remote_code_dir).failed:
             print "ERROR: NOT CLONED YET"
             sudo("mkdir -p "+env.remote_code_dir, "Creating Directory",True)
-            sudo("git clone https://simultech@github.com/UQ-UQx/"+env.gitname+".git %s" % env.remote_code_dir)
+            sudo("git clone https://uqxtechnical@github.com/UQ-UQx/"+env.gitname+".git %s" % env.remote_code_dir)
     with cd(env.remote_code_dir):
         remote_vc("git stash", "Resetting changes to remote",True)
         remote_vc("git reset --hard", "Resetting changes to remote",True)

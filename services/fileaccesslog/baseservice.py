@@ -29,7 +29,6 @@ class BaseService(object):
 
     #Private
     filename = ""
-    filepath = ""
     path_incoming = basepath+'/data/incoming'
     path_finished = basepath+'/data/finished'
     objects_added = 0
@@ -58,35 +57,19 @@ class BaseService(object):
         for dirname, dirnames, filenames in os.walk(self.path_incoming):
             for filename in filenames:
                 #open an incoming file
-                self.filepath = dirname
                 self.filename = filename
                 self.file = open(os.path.join(dirname, self.filename))
                 if self.file:
                     loaded = True
         return loaded
 
-    def numfiles(self):
-        count = 0
-        for dirname, dirnames, filenames in os.walk(self.path_incoming):
-            for filename in filenames:
-                count += 1
-        return count
-
-    def movetofinish(self,date=True):
-        extra = ""
-        if date:
-            extra = time.strftime('%Y_%m_%d')+"_"
+    def movetofinish(self):
         try:
             self.file.close()
         except Exception:
             self.log("error","File is already closed")
-        finbasepath = self.filepath.replace("incoming","finished",1)
-        finpath = os.path.join(finbasepath, extra+self.filename)
-        if not os.path.exists(finbasepath):
-            os.makedirs(finbasepath)
-        os.rename(os.path.join(self.filepath, self.filename),finpath)
-        if os.listdir(self.filepath) == [] and self.filepath != self.path_incoming:
-            os.rmdir(self.filepath)
+        os.rename(os.path.join(self.path_incoming, self.filename),os.path.join(self.path_finished, time.strftime(
+            '%Y_%m_%d')+"_"+self.filename))
 
     def connect_to_mongo(self):
         self.client = MongoClient('localhost', 27017)
