@@ -1,0 +1,24 @@
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_14 17_55_37 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_14 17_55_56 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_14 17_56_09 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics

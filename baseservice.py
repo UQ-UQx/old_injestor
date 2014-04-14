@@ -10,11 +10,6 @@ import hashlib
 
 basepath = os.path.dirname(__file__)
 
-#Logging
-formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
-logging.basicConfig(filename=basepath+'/logs/debug.log', level=logging.DEBUG, formatter=formatter)
-logger = logging.getLogger(__name__)
-
 
 #Base Service Class
 class BaseService(object):
@@ -32,6 +27,7 @@ class BaseService(object):
         },
         'lastawake': '0000-00-00 00:00:00'
     }
+    logger = None
 
     #Attributes for Mongo
     mongo_enabled = False
@@ -73,9 +69,17 @@ class BaseService(object):
     path_finished = basepath+'/data/finished'
     objects_added = 0
 
+    # Sets the logging
+    def setup_logging(self):
+        #Logging
+        formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+        logging.basicConfig(filename=basepath+'/logs/'+self.servicename+'.log', level=logging.DEBUG, formatter=formatter)
+        self.logger = logging.getLogger(__name__)
+
     # Starting the base service
     def initialize(self):
         self.set_service_name()
+        self.setup_logging()
         self.log("info", "Starting service")
         if self.mongo_enabled:
             self.log("info", "Loading Mongo")
@@ -152,8 +156,8 @@ class BaseService(object):
     # Log to screen and to file
     def log(self, logtype, text):
         log = time.strftime('%Y_%m_%d %H_%M_%S')+" "+self.servicename+": ("+logtype+") "+text
+        self.logger.info(log)
         print log
-        logger.info(log)
 
     # Sets the action for the Rest API
     def setaction(self, theaction):

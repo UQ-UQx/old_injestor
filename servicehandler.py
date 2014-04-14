@@ -7,6 +7,7 @@ import SimpleHTTPServer
 import BaseHTTPServer
 import threading
 from time import sleep
+import baseservice
 
 ZRandom = "HELLO"
 
@@ -37,11 +38,12 @@ class ServiceLoader():
             servicepath = os.path.join(servicespath,servicename,'service.py')
             if(os.path.exists(servicepath)):
                 logger.info("Starting module "+servicename)
-                servicemodule = importlib.import_module('services.'+servicename+'.service')
+                servicemodule = baseservice.load_module(servicename)
                 servicethread = threading.Thread(target=servicemodule.runservice)
                 servicethread.start()
                 self.servicethreads.append(servicethread)
                 self.servicemodules.append(servicemodule)
+
 
 class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 

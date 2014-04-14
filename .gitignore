@@ -10,4 +10,5 @@
 data/
 incoming/
 finished/
+logs/
 .idea/
