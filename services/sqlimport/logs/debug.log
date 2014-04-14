@@ -1,0 +1,37 @@
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
+DEBUG:peewee:('CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL)', [])
+ERROR:peewee:CREATE TABLE "book" ("id" INTEGER NOT NULL PRIMARY KEY, "author" VARCHAR(255) NOT NULL, "title" TEXT NOT NULL) []
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/peewee.py", line 2306, in execute_sql
+    cursor.execute(sql, params or ())
+OperationalError: table "book" already exists
