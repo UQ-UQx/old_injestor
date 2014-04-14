@@ -63,3 +63,11 @@ INFO:servicehandler:iptocountry
 INFO:servicehandler:Starting Web Server
 INFO:servicehandler:Sleeping main thread
 INFO:baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
+INFO:services.iptocountry.baseservice:STARTING
