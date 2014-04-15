@@ -132,15 +132,6 @@ class BaseService(object):
                     return False
         return False
 
-    # Does a query on the active MySQL Database
-    def doquery(self, query, commit=False):
-        cur = self.sql_db.cursor()
-        cur.execute(query)
-        for row in cur.fetchall():
-            print row[0]
-        if commit:
-            self.sql_db.commit()
-
     # Gets the name of the service based on its class name
     def set_service_name(self):
         self.servicename = str(self.__class__.__name__).lower()
@@ -221,7 +212,7 @@ class BaseService(object):
                 func(line)
 
     # Inserts an object into the Mongo Database
-    def insert(self, obj):
+    def mongo_insert(self, obj):
         field_hash = self.servicename+"_"
         for field in self.hashfields:
             if obj[field]:
@@ -233,6 +224,15 @@ class BaseService(object):
             pass
         else:
             self.objects_added += 1
+
+    # Does a query on the active MySQL Database
+    def sql_query(self, query, commit=False):
+        cur = self.sql_db.cursor()
+        cur.execute(query)
+        for row in cur.fetchall():
+            print row[0]
+        if commit:
+            self.sql_db.commit()
 
 # Static methods
 

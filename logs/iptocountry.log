@@ -22,3 +22,26 @@ INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip)
 INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
 INFO:baseservice:2014_04_14 17_56_08 iptocountry: (info) checked collection (ip): 0 FOR clickstream
 INFO:baseservice:2014_04_14 17_56_09 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 10_56_09 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 10_56_19 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 10_56_20 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 10_58_59 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
