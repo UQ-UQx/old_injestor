@@ -2586,3 +2586,350 @@ INFO:baseservice:2014_04_15 16_32_28 mongoimport: (info) Run Loop
 INFO:baseservice:2014_04_15 16_32_28 sqlimport: (info) Run Loop
 INFO:baseservice:2014_04_15 16_33_28 mongoimport: (info) Run Loop
 INFO:baseservice:2014_04_15 16_33_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_34_20 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 16_34_22 iptocountry: (info) checked collection (ip): 0 FOR clickstream_test
+INFO:baseservice:2014_04_15 16_34_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_34_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_35_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_35_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_36_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_36_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_37_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_37_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_37_32 iptocountry: (info) checked collection (ip): 18593 FOR clickstream_tmp
+INFO:baseservice:2014_04_15 16_38_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_38_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_39_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_39_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_40_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_40_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_41_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_41_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_42_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_42_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_43_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_43_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_44_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_44_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_45_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_45_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_46_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_46_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_47_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_47_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_48_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_48_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_49_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_49_28 sqlimport: (info) Run Loop
+ERROR:__main__:Fatal Error
+	Type: <type 'exceptions.RuntimeError'>
+	Value: maximum recursion depth exceeded
+	Traceback: <traceback object at 0x104aa8128>
+INFO:baseservice:2014_04_15 16_50_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_50_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_51_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_51_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_52_10 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 16_52_10 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 16_52_10 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 16_52_10 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 16_52_20 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 16_52_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_52_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_53_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_53_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_53_35 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 16_54_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_54_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_55_25 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 16_55_27 iptocountry: (info) checked collection (ip): 0 FOR clickstream_test
+INFO:baseservice:2014_04_15 16_55_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_55_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_56_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_56_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_57_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_57_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_58_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_58_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_58_41 iptocountry: (info) checked collection (ip): 100664 FOR clickstream_tmp
+INFO:baseservice:2014_04_15 16_59_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 16_59_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_00_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_00_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_01_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_01_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_02_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_02_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_03_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_03_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_04_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_04_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_05_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_05_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_06_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_06_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_07_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_07_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_08_18 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_08_18 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_08_18 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_08_18 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 17_08_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_08_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_08_29 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 17_09_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_09_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_09_59 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 17_10_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_10_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_11_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_11_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_12_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_12_28 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_12_50 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 17_12_52 iptocountry: (info) checked collection (ip): 0 FOR clickstream_test
+INFO:baseservice:2014_04_15 17_13_28 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_13_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_14_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_14_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_15_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_15_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_16_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_16_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_17_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_17_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_18_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_18_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_18_58 iptocountry: (info) checked collection (ip): 120 FOR clickstream_tmp
+INFO:baseservice:2014_04_15 17_19_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_19_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_20_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_20_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_21_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_21_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_22_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_22_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_23_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_23_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_24_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_24_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_25_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_25_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_26_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_26_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_26_50 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_26_50 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_26_50 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_26_50 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 17_27_04 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 17_27_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_27_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_28_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_28_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_29_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_29_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_30_12 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 17_30_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_30_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_31_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_31_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_32_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_32_29 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_33_18 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 17_33_18 iptocountry: (info) checked collection (ip): 0 FOR clickstream_test
+INFO:baseservice:2014_04_15 17_33_18 iptocountry: (info) checked collection (ip): 0 FOR clickstream_tmp
+INFO:baseservice:2014_04_15 17_33_29 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_33_29 sqlimport: (info) Run Loop
+INFO:__main__:Service: 2014_04_15 17_33_50 Starting Daemon
+INFO:__main__:Service: 2014_04_15 17_33_53 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_33_54 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module fileaccesslog
+INFO:baseservice:2014_04_15 17_33_54 clickstream: (info) Starting service
+INFO:baseservice:2014_04_15 17_33_54 clickstream: (info) Running Setup
+INFO:baseservice:2014_04_15 17_33_54 clickstream: (info) SETUP
+INFO:baseservice:2014_04_15 17_33_54 clickstream: (info) Run Loop
+INFO:servicehandler:Starting module iptocountry
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) Loading Mongo
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 17_33_55 mongoimport: (info) Starting service
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 17_33_55 mongoimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_33_55 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_33_55 sqlimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_33_55 sqlimport: (info) Loading MySQL
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:baseservice:2014_04_15 17_33_55 sqlimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_33_55 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_33_55 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_34_10 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 17_34_55 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_34_55 sqlimport: (info) Run Loop
+INFO:__main__:Service: 2014_04_15 17_34_59 Starting Daemon
+INFO:baseservice:2014_04_15 17_35_22 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 17_35_55 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_35_55 sqlimport: (info) Run Loop
+INFO:__main__:Service: 2014_04_15 17_36_09 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_36_10 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module fileaccesslog
+INFO:baseservice:2014_04_15 17_36_10 clickstream: (info) Starting service
+INFO:baseservice:2014_04_15 17_36_10 clickstream: (info) Running Setup
+INFO:baseservice:2014_04_15 17_36_10 clickstream: (info) SETUP
+INFO:baseservice:2014_04_15 17_36_10 clickstream: (info) Run Loop
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 17_36_10 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 17_36_10 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 17_36_10 mongoimport: (info) Starting service
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 17_36_10 mongoimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_36_10 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_36_10 sqlimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_36_10 sqlimport: (info) Loading MySQL
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:baseservice:2014_04_15 17_36_10 sqlimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_36_10 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_36_10 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 17_36_10 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_36_10 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_36_11 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_36_31 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:__main__:Service: 2014_04_15 17_36_45 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_37_04 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:baseservice:2014_04_15 17_37_04 clickstream: (info) Starting service
+INFO:baseservice:2014_04_15 17_37_04 clickstream: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_04 clickstream: (info) SETUP
+INFO:baseservice:2014_04_15 17_37_04 clickstream: (info) Run Loop
+INFO:servicehandler:Starting module fileaccesslog
+INFO:servicehandler:Starting module iptocountry
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) Starting service
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 17_37_04 mongoimport: (info) Starting service
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 17_37_04 mongoimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_04 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_04 sqlimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_37_04 sqlimport: (info) Loading MySQL
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_04 sqlimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_04 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_37_04 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:__main__:Service: 2014_04_15 17_37_22 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_37_23 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module fileaccesslog
+INFO:baseservice:2014_04_15 17_37_23 clickstream: (info) Starting service
+INFO:baseservice:2014_04_15 17_37_23 clickstream: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_23 clickstream: (info) SETUP
+INFO:baseservice:2014_04_15 17_37_23 clickstream: (info) Run Loop
+INFO:servicehandler:Starting module iptocountry
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) Starting service
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) Loading Mongo
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 17_37_24 mongoimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_37_24 mongoimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_24 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_24 sqlimport: (info) Starting service
+ERROR:__main__:Fatal Error
+	Type: <class 'socket.error'>
+	Value: [Errno 48] Address already in use
+	Traceback: <traceback object at 0x1043580e0>
+INFO:baseservice:2014_04_15 17_37_24 sqlimport: (info) Loading MySQL
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_24 sqlimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_37_24 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_37_24 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_37_28 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:__main__:Service: 2014_04_15 17_37_40 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_37_49 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_37_51 Stopping Daemon
+INFO:__main__:Service: 2014_04_15 17_38_37 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:servicehandler:Starting module fileaccesslog
+INFO:baseservice:2014_04_15 17_38_37 clickstream: (info) Starting service
+INFO:baseservice:2014_04_15 17_38_37 clickstream: (info) Running Setup
+INFO:baseservice:2014_04_15 17_38_37 clickstream: (info) SETUP
+INFO:baseservice:2014_04_15 17_38_37 clickstream: (info) Run Loop
+INFO:servicehandler:Starting module iptocountry
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 17_38_37 mongoimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_38_37 mongoimport: (info) Running Setup
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 17_38_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_38_37 sqlimport: (info) Starting service
+INFO:baseservice:2014_04_15 17_38_37 sqlimport: (info) Loading MySQL
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:baseservice:2014_04_15 17_38_37 sqlimport: (info) Running Setup
+INFO:baseservice:2014_04_15 17_38_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 17_38_37 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 17_39_00 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 17_39_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_39_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_40_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_40_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_40_46 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 17_41_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_41_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_42_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_42_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_42_53 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 17_42_57 iptocountry: (info) checked collection (ip): 423946 FOR clickstream
+INFO:baseservice:2014_04_15 17_43_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_43_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_44_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_44_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_45_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_45_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_46_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_46_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_47_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_47_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_48_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_48_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_49_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_49_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_50_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_50_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_51_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_51_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_52_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_52_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_53_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_53_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_54_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_54_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_55_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_55_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_56_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_56_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_57_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_57_37 sqlimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_58_37 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 17_58_37 sqlimport: (info) Run Loop

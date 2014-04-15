@@ -285,6 +285,7 @@ def getlogfilepath(module_name):
 def getdatafilepaths(module_name):
     paths = {}
     thebasepath = os.path.dirname(os.path.abspath(__file__))
+    paths['basedata'] = os.path.join(thebasepath, 'data', module_name)
     paths['incoming'] = os.path.join(thebasepath, 'data', module_name, 'incoming')
     paths['process'] = os.path.join(thebasepath, 'data', module_name, 'process')
     paths['finished'] = os.path.join(thebasepath, 'data', module_name, 'finished')

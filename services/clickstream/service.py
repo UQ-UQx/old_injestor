@@ -16,9 +16,8 @@ class Clickstream(baseservice.BaseService):
         super(Clickstream, self).__init__()
 
         self.version = "development"
-        self.dbname = "logs"
-        self.collectionname = "clickstream"
-        self.tmp_collectionname = "clickstream_tmp"
+        self.mongo_dbname = "logs"
+        self.mongo_collectionname = "clickstream"
         self.status['name'] = "Clickstream"
         self.initialize()
 
@@ -30,30 +29,76 @@ class Clickstream(baseservice.BaseService):
     def run(self):
         self.setaction('starting run')
         self.status['status'] = 'running'
+        #find out what the last file creation dates were
+        maxdates = {}
+        paths = baseservice.getdatafilepaths(self.servicename)
+        for dirname, dirnames, filenames in os.walk(paths['incoming']):
+            for filename in filenames:
+                if self.validclickstreamlog(dirname,filename):
+                    filetime = self.filenametodate(filename)
+                    if dirname not in maxdates:
+                        maxdates[dirname] = filetime
+                    if(filetime > maxdates[dirname]):
+                        maxdates[dirname] = filetime
+
         #load a file
         self.status['progress']['total'] = str(self.numfiles())
         self.status['progress']['current'] = 1
         while self.load_incoming_file():
-            valid = False
-            try:
-                if self.filename.find('.log') != -1:
-                    valid = True
-                if self.filepath.find('-edge-') != -1:
-                    valid = False
-            except:
-                print "BAD"
-                pass
-            if valid:
-                print "loading clickstream file "+self.filepath+"/"+self.filename
-                cmd = "mongoimport --db "+self.dbname+" --collection "+self.tmp_collectionname+" < "+self.filepath+"/"+self.filename
-                os.system(cmd)
-                print "Importing "+self.filepath+"/"+self.filename+" "+str(self.status['progress']['current'])+" out of "+str(self.status['progress']['total'])
+            if self.validclickstreamlog(self.filepath,self.filename):
+                self.setaction('importing log '+self.filename)
+
+                #Check whether its a valid date
+                filedate = self.filenametodate(self.filename)
+                if filedate == maxdates[self.filepath]:
+                    print "THIS IS MAX DATE, NEED TO IGNORE IT"
+                    pass
+                elif not self.checkwritten(self.filepath,self.filename):
+                    print "loading clickstream file "+self.filepath+"/"+self.filename
+                    cmd = "mongoimport --db "+self.mongo_dbname+" --collection "+self.mongo_collectionname+" < "+self\
+                        .filepath+"/"+self.filename
+                    os.system(cmd)
+                    self.addwritten(self.filepath,self.filename)
+                    print "Importing "+self.filepath+"/"+self.filename+" "+str(self.status['progress']['current'])+" out of "+str(self.status['progress']['total'])
+                else:
+                    print "Already done, ignoring"
             self.movetofinish()
             self.status['progress']['current'] += 1
-        mongoremove = "mongo "+self.dbname+" --eval \"db."+self.collectionname+".remove()\""
-        os.system(mongoremove)
-        mongomove = "mongo "+self.dbname+" --eval \"db."+self.tmp_collectionname+".renameCollection('"+self.collectionname+"')\""
-        os.system(mongomove)
+
+    def checkwritten(self,filepath,filename):
+        paths = baseservice.getdatafilepaths(self.servicename)
+        existingpath = False
+        sig = filepath+"/"+filename
+        print "Sig is "+sig
+        with open(os.path.join(paths['basedata'],'injested.txt'), "r") as myfile:
+            for line in myfile:
+                sngline = line.replace("\n","")
+                if sngline == sig:
+                    existingpath = True
+                    break
+        return existingpath
+
+    def addwritten(self,filepath,filename):
+        paths = baseservice.getdatafilepaths(self.servicename)
+        with open(os.path.join(paths['basedata'],'injested.txt'), "a") as myfile:
+            myfile.write(filepath+"/"+filename+"\n")
+
+    def filenametodate(self,filename):
+        date = filename.replace("_UQx.log","")
+        date = time.strptime(date, "%Y-%m-%d")
+        return date
+
+    def validclickstreamlog(self,filepath,filename):
+        valid = False
+        try:
+            if filename.find('.log') != -1:
+                valid = True
+            if filepath.find('-edge-') != -1:
+                valid = False
+        except:
+            print "BAD"
+            pass
+        return valid
 
 def name():
     return str("clickstream")
