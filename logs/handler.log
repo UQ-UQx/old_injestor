@@ -1938,3 +1938,48 @@ ERROR:__main__:Fatal Error
 	Type: <type 'exceptions.RuntimeError'>
 	Value: maximum recursion depth exceeded
 	Traceback: <traceback object at 0x1015167e8>
+INFO:__main__:Service: 2014_04_15 11_54_45 Starting Daemon
+INFO:servicehandler:Starting Service Loader
+INFO:servicehandler:Starting module clickstream
+INFO:services.clickstream.baseservice:STARTING CLICKSTREAM
+INFO:servicehandler:Starting module fileaccesslog
+INFO:services.clickstream.baseservice:SETUP
+INFO:servicehandler:Starting module iptocountry
+INFO:baseservice:2014_04_15 11_54_45 iptocountry: (info) Starting service
+INFO:servicehandler:Starting module mongocourseanalytics
+INFO:baseservice:2014_04_15 11_54_45 iptocountry: (info) Loading Mongo
+INFO:servicehandler:Starting module mongoimport
+INFO:baseservice:2014_04_15 11_54_45 iptocountry: (info) Running Setup
+INFO:servicehandler:Starting module sqlimport
+INFO:baseservice:2014_04_15 11_54_46 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 11_54_46 mongoimport: (info) Starting service
+INFO:baseservice:2014_04_15 11_54_46 mongoimport: (info) Running Setup
+INFO:baseservice:2014_04_15 11_54_46 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 11_54_46 mongoimport: (info) Run Loop
+INFO:servicehandler:Starting Web Server
+INFO:servicehandler:Sleeping main thread
+INFO:baseservice:2014_04_15 11_54_46 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 11_54_46 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 11_54_57 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 11_55_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 11_56_09 iptocountry: (info) checked collection (ip): 0 FOR world2
+INFO:baseservice:2014_04_15 11_56_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 11_57_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 11_57_59 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs_new
+INFO:baseservice:2014_04_15 11_58_01 iptocountry: (info) checked collection (ip): 0 FOR clickstream_test
+INFO:baseservice:2014_04_15 11_58_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 11_59_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_00_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_01_02 iptocountry: (info) checked collection (ip): 120 FOR clickstream_tmp
+INFO:baseservice:2014_04_15 12_01_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_02_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_03_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_04_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_05_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_06_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_07_46 mongoimport: (info) Run Loop
+INFO:baseservice:2014_04_15 12_08_12 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 12_08_12 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 12_08_12 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 12_08_12 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 12_08_24 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics

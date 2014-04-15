@@ -95,18 +95,20 @@ class BaseService(object):
             self.setaction('running')
             self.run()
             self.setaction('sleeping')
+            print "Going to sleep"
             time.sleep(60)
 
     # Connects to a Mongo Database
     def connect_to_mongo(self, db_name, collection_name):
         try:
-            self.mongo_client = MongoClient('localhost', 27017)
+            if self.mongo_client == None:
+                self.mongo_client = MongoClient('localhost', 27017)
             if db_name != "":
                 self.mongo_db = self.mongo_client[db_name]
                 if self.mongo_db:
                     self.mongo_dbname = db_name
                     if collection_name != "":
-                        self.mongo_collection = self.db[collection_name]
+                        self.mongo_collection = self.mongo_db[collection_name]
                         if self.mongo_collection:
                             self.mongo_collectionname = collection_name
             return True
@@ -166,7 +168,7 @@ class BaseService(object):
         for dirname, dirnames, filenames in os.walk(filepaths['incoming']):
             for filename in filenames:
                 #open an incoming file
-                self.file = open(os.path.join(dirname, self.filename))
+                self.file = open(os.path.join(dirname, filename))
                 self.filename = filename
                 self.filepath = dirname
                 if self.file:
@@ -191,6 +193,7 @@ class BaseService(object):
 
     # Moves the open file from incoming to finished, including subdirectories
     def movetofinish(self, prepend_date=False):
+        paths = getdatafilepaths(self.servicename)
         try:
             self.file.close()
         except IOError:
@@ -202,7 +205,7 @@ class BaseService(object):
         if prepend_date:
             newfilename = time.strftime('%Y_%m_%d')+"_"+newfilename
         os.rename(os.path.join(self.filepath, self.filename), os.path.join(finpath, newfilename))
-        if os.listdir(self.filepath) == [] and self.filepath != self.path_incoming:
+        if os.listdir(self.filepath) == [] and self.filepath != paths['incoming']:
             os.rmdir(self.filepath)
 
     # Loops through the open file and calls the supplied function

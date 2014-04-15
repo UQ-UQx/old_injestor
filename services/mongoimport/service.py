@@ -1,20 +1,23 @@
 #!/usr/bin/python
+
 import os
 import time
 import json
 import pymongo
 from datetime import datetime
 from bson.objectid import ObjectId
+import baseservice
 
 import pprint
-
-import baseservice
 
 basepath = os.path.dirname(__file__)
 
 
-class MongoImport(baseservice.BaseService):
-    usemongo = True
+class Mongoimport(baseservice.BaseService):
+
+    mongo_enabled = False
+    mongo_dbname = ""
+    mongo_collectionname = ""
     status = {
         'name': 'unknown',
         'status': 'stopped',
@@ -31,26 +34,21 @@ class MongoImport(baseservice.BaseService):
 
     #Private
     info_filename = "info.json"
-    path_info = os.path.join(basepath, "data", info_filename)
+    path_info = os.path.join(basepath, info_filename)
 
     def __init__(self):
         self.status['name'] = "Mongo Importer"
         self.initialize()
 
-    def setaction(self, theaction):
-        if theaction == 'stopped':
-            self.status['status'] = 'stopped'
-        else:
-            self.status['status'] = 'running'
-        self.status['action'] = str(theaction)
-        self.status['actiontime'] = time.strftime('%Y-%m-%d %H:%M:%S')
-
     def setup(self):
         #Get meta-data from info.json
+        print "Connected"
         self.parse_info()
         if self.mongo_dbname:
-            self.mongo_db = self.mongo_client[self.mongo_dbname]
-        #    return True
+            print "A"
+            #self.mongo_db = self.mongo_client[self.mongo_dbname]
+            print "B"
+            print "Connected"
         else:
             pass
 
@@ -78,20 +76,25 @@ class MongoImport(baseservice.BaseService):
             print self.filename
             if self.filename in self.mongo_files:
                 if self.filename.endswith(".mongo"):
-                    self.mongo_collection = self.mongo_db[self.filename[:-6]]
+                    self.connect_to_mongo(self.mongo_dbname, self.filename[:-6])
                 else:
                     pass
                 self.setaction("loading file " + self.filename + " to " + self.mongo_dbname)
                 #ToDo: injest into mongodb
                 ###
+                self.status['progress']['total'] = self.numlines()
+                self.status['progress']['current'] = 0
                 for line in self.file:
                     document = json.loads(line)
                     if '_id' in document:
                         self.insert_with_id(document)
-                        print "objects added %d" % self.objects_added
+                        #print "objects added %d" % self.objects_added
                     else:
                         #ToDo: point unique fields
-                        self.insert(document)
+                        self.mongo_insert(self.format_document(document))
+                    self.status['progress']['current'] += 1
+                    #print "status is "+str(self.status['progress']['current'])+' out of '+str(self.status['progress'][
+                    #    'total'])
                 self.movetofinish()
             else:
                 self.setaction("loading file " + self.filename + ". It is not in our list.")
@@ -114,7 +117,7 @@ class MongoImport(baseservice.BaseService):
     def insert_with_id(self, document):
         document = self.format_document(document)
         doc_id = document.pop('_id')
-        print doc_id
+        #print doc_id
         done = self.mongo_collection.update({"_id": doc_id}, {"$set": document}, upsert=True)
         if done['updatedExisting']:
             pass
@@ -127,8 +130,8 @@ def name():
 
 
 def status():
-    return MongoImport.status
+    return Mongoimport.status
 
 
 def runservice():
-    return MongoImport()
+    return Mongoimport()

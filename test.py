@@ -4,6 +4,7 @@ import importlib
 import sys
 import baseservice
 
+
 if len(sys.argv) < 2:
     print "Error: Please supply a module name"
 else:
@@ -13,5 +14,6 @@ else:
         print "Test run of service: "+moduleName
         print mod.runservice()
         print "Finished test run"
-    except:
+    except Exception, e:
         print "Error: Invalid service name: "+moduleName
+        print e

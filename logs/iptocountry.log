@@ -45,3 +45,18 @@ INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip)
 INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
 INFO:baseservice:2014_04_15 10_58_48 iptocountry: (info) checked collection (ip): 0 FOR clickstream
 INFO:baseservice:2014_04_15 10_58_59 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
+INFO:baseservice:2014_04_15 11_05_40 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 11_05_40 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 11_05_40 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 11_05_40 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 11_05_40 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 11_05_41 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 11_05_41 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) Starting service
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) Running Setup
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) Run Loop
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_04_15 11_07_49 iptocountry: (info) checked collection (ip): 0 FOR courseware_analytics
