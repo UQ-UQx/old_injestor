@@ -15,42 +15,28 @@ basepath = os.path.dirname(__file__)
 
 class Mongoimport(baseservice.BaseService):
 
-    mongo_enabled = False
-    mongo_dbname = ""
-    mongo_collectionname = ""
-    status = {
-        'name': 'unknown',
-        'status': 'stopped',
-        'action': 'stopped',
-        'actiontime': '000-00-00 00:00:00',
-        'progress': {
-            'current': '0',
-            'total': '0'
-        },
-        'lastawake': '0000-00-00 00:00:00'
-    }
-
-    mongo_files = []
-
-    #Private
-    info_filename = "info.json"
-    path_info = os.path.join(basepath, info_filename)
+    inst = None
 
     def __init__(self):
-        self.status['name'] = "Mongo Importer"
+
+        Mongoimport.inst = self
+        super(Mongoimport, self).__init__()
+
+        self.status['name'] = "Mongo Importer Discussion Forums"
+        self.mongo_enabled = False
+        self.mongo_dbname = ""
+        self.mongo_collectionname = ""
+
+        self.mongo_files = []
+
+        #Private
+        self.info_filename = "info.json"
+        self.path_info = os.path.join(basepath, self.info_filename)
         self.initialize()
 
     def setup(self):
         #Get meta-data from info.json
-        print "Connected"
         self.parse_info()
-        if self.mongo_dbname:
-            print "A"
-            #self.mongo_db = self.mongo_client[self.mongo_dbname]
-            print "B"
-            print "Connected"
-        else:
-            pass
 
     def parse_info(self):
         try:
@@ -130,7 +116,7 @@ def name():
 
 
 def status():
-    return Mongoimport.status
+    return Mongoimport.inst.status
 
 
 def runservice():

@@ -14,19 +14,24 @@ basepath = os.path.dirname(__file__)
 
 class Iptocountry(baseservice.BaseService):
 
-    version = "testing"
-    mongo_dbname = 'logs'
-    mongo_enabled = True
-
-    geoReader = None
-    ipfield = 'ip'
+    inst = None
 
     def __init__(self):
-        self.status['name'] = "IP To Country"
+
+        Iptocountry.inst = self
+        super(Iptocountry, self).__init__()
+
+        self.version = "testing"
+        self.mongo_dbname = 'logs'
+        self.mongo_enabled = True
+
+        self.geo_reader = None
+        self.ipfield = 'ip'
         self.initialize()
 
     def setup(self):
-        self.geoReader = geoip2.database.Reader(basepath+'/lib/GeoIP2-Country.mmdb')
+        self.status['name'] = "IP To Country"
+        self.geo_reader = geoip2.database.Reader(basepath+'/lib/GeoIP2-Country.mmdb')
 
     def run(self):
         for collection in self.mongo_db.collection_names():
@@ -45,7 +50,7 @@ class Iptocountry(baseservice.BaseService):
                     self.status['progress']['current'] += 1
                     if toupdate[self.ipfield] != '::1':
                         try:
-                            country = self.geoReader.country(toupdate[self.ipfield])
+                            country = self.geo_reader.country(toupdate[self.ipfield])
                             isocountry = country.country.iso_code
                             self.mongo_collection.update({"_id": toupdate['_id']}, {"$set": {"country": isocountry}})
                         except AddressNotFoundError:
@@ -54,12 +59,11 @@ class Iptocountry(baseservice.BaseService):
                         self.mongo_collection.update({"_id": ObjectId(toupdate['_id'])}, {"$set": {"country": ""}})
 
 
-
 def name():
     return str("iptocountry")
 
 def status():
-    return Iptocountry.status
+    return Iptocountry.inst.status
 
 def runservice():
     return Iptocountry()

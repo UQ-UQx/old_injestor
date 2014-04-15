@@ -8,34 +8,21 @@ basepath = os.path.dirname(__file__)
 
 class Clickstream(baseservice.BaseService):
 
-    dbname = "logs"
-    collectionname = "clickstream"
-    tmp_collectionname = "clickstream_tmp"
-
-    status = {
-        'name':'unknown',
-        'status':'stopped',
-        'action':'stopped',
-        'actiontime':'000-00-00 00:00:00',
-        'progress':{
-            'current':'0',
-            'total':'0'
-        },
-        'lastawake':'0000-00-00 00:00:00'
-    }
+    inst = None
 
     def __init__(self):
+
+        Clickstream.inst = self
+        super(Clickstream, self).__init__()
+
+        self.version = "development"
+        self.dbname = "logs"
+        self.collectionname = "clickstream"
+        self.tmp_collectionname = "clickstream_tmp"
         self.status['name'] = "Clickstream"
-        self.log("info", "STARTING CLICKSTREAM")
         self.initialize()
 
-    def setaction(self,theaction):
-        if(theaction == 'stopped'):
-            self.status['status'] = 'stopped'
-        else:
-            self.status['status'] = 'running'
-        self.status['action'] = str(theaction)
-        self.status['actiontime'] = time.strftime('%Y-%m-%d %H:%M:%S')
+        self.log("info", "STARTING CLICKSTREAM")
 
     def setup(self):
         self.log("info", "SETUP")
@@ -57,10 +44,11 @@ class Clickstream(baseservice.BaseService):
                 print "BAD"
                 pass
             if valid:
+                print "loading clickstream file "+self.filepath+"/"+self.filename
                 cmd = "mongoimport --db "+self.dbname+" --collection "+self.tmp_collectionname+" < "+self.filepath+"/"+self.filename
                 os.system(cmd)
                 print "Importing "+self.filepath+"/"+self.filename+" "+str(self.status['progress']['current'])+" out of "+str(self.status['progress']['total'])
-            self.movetofinish(date=False)
+            self.movetofinish()
             self.status['progress']['current'] += 1
         mongoremove = "mongo "+self.dbname+" --eval \"db."+self.collectionname+".remove()\""
         os.system(mongoremove)
@@ -71,7 +59,7 @@ def name():
     return str("clickstream")
 
 def status():
-    return Clickstream.status
+    return Clickstream.inst.status
 
 def runservice():
     return Clickstream()

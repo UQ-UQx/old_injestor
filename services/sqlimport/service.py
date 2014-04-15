@@ -10,68 +10,44 @@ import MySQLdb
 
 basepath = os.path.dirname(__file__)
 
-sqldb = None
-
 class SQLImport(baseservice.BaseService):
 
-    usemongo = False
-    sqluser = 'root'
-    sqlpass = ''
-    sqldbname = 'uqxdump'
-    sqldb = None
-    sqltablename = ""
-
-    status = {
-        'name':'unknown',
-        'status':'stopped',
-        'action':'stopped',
-        'actiontime':'000-00-00 00:00:00',
-        'progress':{
-            'current':'0',
-            'total':'0'
-        },
-        'lastawake':'0000-00-00 00:00:00'
-    }
+    inst = None
 
     def __init__(self):
+        SQLImport.inst = self
+        super(SQLImport, self).__init__()
+
         self.status['name'] = "SQL Importer"
+        self.sql_enabled = True
+        self.sql_dbname = 'uqxdump'
+        self.sql_tablename = ""
         self.initialize()
 
-    def setaction(self,theaction):
-        if(theaction == 'stopped'):
-            self.status['status'] = 'stopped'
-        else:
-            self.status['status'] = 'running'
-        self.status['action'] = str(theaction)
-        self.status['actiontime'] = time.strftime('%Y-%m-%d %H:%M:%S')
-
     def setup(self):
-        self.changedb(self.sqldbname,True)
         pass
 
-    def changedb(self,dbname,force=False):
-        if self.sqldbname != dbname or force:
-            try:
-                newdb = MySQLdb.connect(host="localhost",user=self.sqluser,passwd=self.sqlpass,db=dbname)
-                self.sqldb = newdb
-                self.sqldbname = dbname
-            except Exception, e:
-                if e[0]:
-                    print "Creating database"
-                    self.doquery("CREATE DATABASE "+dbname)
-                    self.changedb(dbname)
-                else:
-                    return
-
-    def doquery(self,query,commit=False):
-        #print self.sqldbname
-        #print query
-        cur = self.sqldb.cursor()
-        cur.execute(query)
-        for row in cur.fetchall():
-            print row[0]
-        if commit:
-            self.sqldb.commit()
+    def run(self):
+        self.setaction('test running')
+        self.status['status'] = 'running'
+        #load a file
+        while self.load_incoming_file():
+            #edge to ignore
+            if self.filename.find("prod-edge") > -1:
+                self.movetofinish()
+                continue
+            columns = []
+            #split the headers
+            for line in self.file:
+                columns = line.split("\t")
+                break
+            self.setaction("creating table for "+self.filename)
+            if self.createtableandvalid(self.filename,columns):
+                self.setaction("loading data from "+self.filename)
+                self.status['progress']['total'] = self.numlines()
+                self.status['progress']['current'] = 0
+                self.parselines(self.parseline)
+            self.movetofinish()
 
     def createtableandvalid(self,tablename,columns=[]):
         isvalid = False
@@ -90,7 +66,7 @@ class SQLImport(baseservice.BaseService):
         usedb = '_'.join(usedb)
         usedb = usedb.replace("_"+tablename,"")
         # Change to the database
-        self.changedb(usedb)
+        self.connect_to_sql(usedb)
         query = ""
         query += "CREATE TABLE IF NOT EXISTS "
         query += tablename
@@ -107,49 +83,25 @@ class SQLImport(baseservice.BaseService):
         query += " xhash varchar(200) "
         query += ", UNIQUE (xhash)"
         query += " );"
-        self.doquery(query)
-        self.sqltablename = tablename
+        self.sql_query(query)
+        self.sql_tablename = tablename
         return isvalid
 
-    def run(self):
-        self.setaction('test running')
-        self.status['status'] = 'running'
-        #load a file
-        while self.load_incoming_file():
-            if self.filename.find("prod-edge") > -1:
-                self.setaction("loading table "+self.sqltablename+" ("+self.sqldbname+")")
-                self.movetofinish()
-                continue
-            columns = []
-            for line in self.file:
-                columns = line.split("\t")
-                break
-            if self.createtableandvalid(self.filename,columns):
-                self.parselines(self.parseline)
-            self.movetofinish()
-
     def parseline(self,line):
-        zhash = hashlib.sha256(line).hexdigest()
+        datahash = hashlib.sha256(line).hexdigest()
         line = line.replace("\n","")
         line = line.replace('"',"''")
         data = line.split("\t")
-        data.append(zhash)
+        data.append(datahash)
         insertdata = '"'+'","'.join(data)+'"'
-        self.doquery("INSERT IGNORE INTO "+self.sqltablename+" VALUES ( "+insertdata+" );",True)
+        self.sql_query("INSERT IGNORE INTO "+self.sql_tablename+" VALUES ( "+insertdata+" );",True)
+        self.status['progress']['current'] += 1
 
 def name():
     return str("sqlimport")
 
 def status():
-    return SQLImport.status
+    return SQLImport.inst.status
 
 def runservice():
     return SQLImport()
-
-
-class Book(peewee.Model):
-    author = peewee.CharField()
-    title = peewee.TextField()
-
-    class Meta:
-        database = sqldb
