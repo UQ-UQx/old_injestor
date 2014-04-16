@@ -6,7 +6,11 @@
             "platform": "prod"
         },
         {
-            "course_code": "Think102x-1T2014",
+            "course_code": "BIOIMG101x-1T2014",
+            "platform": "prod"
+        },
+        {
+            "course_code": "HYPERS301x-1T2014",
             "platform": "prod"
         }
     ]
