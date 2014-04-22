@@ -28,65 +28,7 @@
     <favorites_list name="injestor" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="337" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1406">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/clickstream/service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="25" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0" vertical-offset="1159" max-vertical-offset="2185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="228">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/mongoimport/info.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="150" selection-end="150" vertical-scroll-proportion="0.094527364" vertical-offset="0" max-vertical-offset="1206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="injested.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/clickstream/injested.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1038" column="4" selection-start="117298" selection-end="117298" vertical-scroll-proportion="0.0" vertical-offset="19437" max-vertical-offset="20368">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseservice.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baseservice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="31" selection-start="7899" selection-end="7918" vertical-scroll-proportion="0.0" vertical-offset="4180" max-vertical-offset="5643">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -670,14 +612,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="23" width="2560" height="1352" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24146147" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24146147" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -946,37 +888,16 @@
         <state line="52" column="67" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.7236629" vertical-offset="0" max-vertical-offset="2204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
+    <entry file="file://$PROJECT_DIR$/services/mongoimport/info.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="337" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1254">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clickstream/injested.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1038" column="4" selection-start="117298" selection-end="117298" vertical-scroll-proportion="0.0" vertical-offset="19437" max-vertical-offset="20368">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="31" selection-start="7899" selection-end="7918" vertical-scroll-proportion="0.0" vertical-offset="3231" max-vertical-offset="5510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/clickstream/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="25" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2147">
+        <state line="16" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="0.25207296" vertical-offset="0" max-vertical-offset="1206">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="228">
+        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09444905" vertical-offset="0" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
@@ -984,9 +905,30 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/mongoimport/info.json">
+    <entry file="file://$PROJECT_DIR$/services/clickstream/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="150" selection-end="150" vertical-scroll-proportion="0.094527364" vertical-offset="0" max-vertical-offset="1206">
+        <state line="61" column="25" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.16855754" vertical-offset="951" max-vertical-offset="2185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="337" selection-end="404" vertical-scroll-proportion="0.18395463" vertical-offset="172" max-vertical-offset="1406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clickstream/injested.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1038" column="4" selection-start="117298" selection-end="117298" vertical-scroll-proportion="0.4764992" vertical-offset="19134" max-vertical-offset="20368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="31" selection-start="7899" selection-end="7918" vertical-scroll-proportion="-0.10777958" vertical-offset="4180" max-vertical-offset="5510">
           <folding />
         </state>
       </provider>
