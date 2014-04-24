@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/handler.log" afterPath="$PROJECT_DIR$/logs/handler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="injestor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +28,19 @@
     <favorites_list name="injestor" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="service.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/timefinder/service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="59" selection-start="793" selection-end="793" vertical-scroll-proportion="0.5696921" vertical-offset="0" max-vertical-offset="1254">
+              <folding>
+                <element signature="e#18#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -56,12 +68,12 @@
         <option value="$PROJECT_DIR$/services/clickstream/service.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/services/mongoimport/info.json" />
+        <option value="$PROJECT_DIR$/services/timefinder/service.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="1352" />
   </component>
@@ -126,6 +138,14 @@
               <option name="myItemId" value="injestor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.5 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -148,6 +168,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="injestor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="injestor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timefinder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,6 +306,20 @@
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="injestor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="injestor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sqlimport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -288,20 +340,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mongoimport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,6 +431,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/timefinder" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/clickstream/incoming/prod-edxapp-011" />
       <recent name="$PROJECT_DIR$/data/clickstream/incoming" />
@@ -524,9 +565,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -548,6 +586,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -611,15 +652,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="23" width="2560" height="1352" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="2560" height="1352" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24146147" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -651,11 +692,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="99" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.0" vertical-offset="1729" max-vertical-offset="1900" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="15" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456" />
@@ -663,9 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="460" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="5472">
-          <folding />
-        </state>
+        <state line="24" column="20" selection-start="460" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="5472" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/mongoimport/service.py">
@@ -685,9 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5415">
-          <folding />
-        </state>
+        <state line="23" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5415" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -722,9 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="64" selection-start="5113" selection-end="5113" vertical-scroll-proportion="0.0" vertical-offset="3078" max-vertical-offset="4921">
-          <folding />
-        </state>
+        <state line="162" column="64" selection-start="5113" selection-end="5113" vertical-scroll-proportion="0.0" vertical-offset="3078" max-vertical-offset="4921" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/fileaccesslog/service.py">
@@ -734,9 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="29" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4408">
-          <folding />
-        </state>
+        <state line="94" column="29" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
@@ -746,9 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="23" selection-start="2973" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="3857">
-          <folding />
-        </state>
+        <state line="102" column="23" selection-start="2973" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="3857" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
@@ -768,9 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="27" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.0" vertical-offset="1160" max-vertical-offset="2337">
-          <folding />
-        </state>
+        <state line="105" column="27" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.0" vertical-offset="1160" max-vertical-offset="2337" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
@@ -890,16 +914,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/mongoimport/info.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="0.25207296" vertical-offset="0" max-vertical-offset="1206">
-          <folding />
-        </state>
+        <state line="16" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="0.25207296" vertical-offset="0" max-vertical-offset="1206" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09444905" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
+        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09444905" vertical-offset="0" max-vertical-offset="1207" />
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -907,29 +927,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/clickstream/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="25" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.16855754" vertical-offset="951" max-vertical-offset="2185">
-          <folding />
-        </state>
+        <state line="61" column="25" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.16855754" vertical-offset="951" max-vertical-offset="2185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/iptocountry/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="337" selection-end="404" vertical-scroll-proportion="0.18395463" vertical-offset="172" max-vertical-offset="1406">
-          <folding />
-        </state>
+        <state line="21" column="43" selection-start="337" selection-end="404" vertical-scroll-proportion="0.18395463" vertical-offset="172" max-vertical-offset="1406" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/clickstream/injested.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1038" column="4" selection-start="117298" selection-end="117298" vertical-scroll-proportion="0.4764992" vertical-offset="19134" max-vertical-offset="20368">
-          <folding />
-        </state>
+        <state line="1038" column="4" selection-start="117298" selection-end="117298" vertical-scroll-proportion="0.4764992" vertical-offset="19134" max-vertical-offset="20368" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="31" selection-start="7899" selection-end="7918" vertical-scroll-proportion="-0.10777958" vertical-offset="4180" max-vertical-offset="5510">
-          <folding />
+        <state line="220" column="31" selection-start="7899" selection-end="7918" vertical-scroll-proportion="-0.10777958" vertical-offset="4180" max-vertical-offset="5510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/timefinder/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="59" selection-start="793" selection-end="793" vertical-scroll-proportion="0.5696921" vertical-offset="0" max-vertical-offset="1254">
+          <folding>
+            <element signature="e#18#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
