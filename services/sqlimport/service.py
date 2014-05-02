@@ -88,6 +88,8 @@ class SQLImport(baseservice.BaseService):
         return isvalid
 
     def parseline(self,line):
+        if line[:2] == 'id':
+            return
         datahash = hashlib.sha256(line).hexdigest()
         line = line.replace("\n","")
         line = line.replace('"',"''")
