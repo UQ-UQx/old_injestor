@@ -30,6 +30,8 @@ class Coursestructure(baseservice.BaseService):
 
         self.mongo_files = []
 
+        self.outputdir = 'www/course_structure'
+
         #Private
         self.initialize()
 
@@ -38,6 +40,8 @@ class Coursestructure(baseservice.BaseService):
         print "INITIALIZING"
 
     def run(self):
+        self.setaction('Parsing courses')
+        self.status['status'] = 'running'
         filepaths = baseservice.getdatafilepaths(self.servicename)
         loaded = False
         for dirname, dirnames, filenames in os.walk(filepaths['incoming']):
@@ -52,20 +56,55 @@ class Coursestructure(baseservice.BaseService):
             if dircount == 1:
                 self.parsecourse(dirname)
         return loaded
-        print 'dongs'
 
     def parsecourse(self, path):
         coursename = os.path.basename(os.path.normpath(path))
+        self.setaction("Parsing course: "+coursename)
+        self.status['progress']['total'] = 10
+        self.status['progress']['current'] = 0
         coursesplit = coursename.split("-")
         term = coursesplit[-1]
         #Build the XML
         course = {}
         #Parse the course
         coursefile = os.path.join(path, 'course', term + '.xml')
-        course = self.xml_unpack_file(coursefile)
-        print course
         print "Parsing " + coursename + " at " + path
-        exit(0)
+        course = self.xml_unpack_file(coursefile)
+        self.status['progress']['current'] = 4
+        course = self.add_linked_file_xml(path,course)
+        self.status['progress']['current'] = 8
+        f = open(self.outputdir+'/'+coursename+'.json', 'w+')
+        f.write(json.dumps(course))
+        self.status['progress']['current'] = 10
+
+    def print_course(self,course):
+        pp = pprint.PrettyPrinter(indent=4)
+        for chapter in course['children']:
+            print 'Chapter: '+chapter['display_name']
+            for sequence in chapter['children']:
+                print '\tSequence: '+sequence['display_name']
+                for vertical in sequence['children']:
+                    print '\t\tVertical: '+vertical['display_name']
+                    for something in vertical['children']:
+                        display_name = 'Unknown'
+                        if 'display_name' in something:
+                            display_name = something['display_name']
+                        print '\t\t\t'+something['tag']+': '+display_name
+                        print something
+
+    def add_linked_file_xml(self, basepath, xml_object):
+        if len(xml_object['children']) > 0:
+            index = 0
+            for child in xml_object['children']:
+                if len(child['children']) == 0 and 'url_name' in child:
+                    child_path = os.path.join(basepath,child['tag'],child['url_name']+'.xml')
+                    if os.path.isfile(child_path):
+                        child_obj = (self.xml_unpack_file(child_path))
+                        for key in child_obj:
+                            child[key] = child_obj[key]
+                        xml_object['children'][index] = self.add_linked_file_xml(basepath,child)
+                index+=1
+        return xml_object
 
 
 def name():
