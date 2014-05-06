@@ -7,6 +7,7 @@ import os
 import MySQLdb
 from pymongo import MongoClient
 import hashlib
+import xml.etree.ElementTree as ET
 
 basepath = os.path.dirname(__file__)
 
@@ -243,6 +244,24 @@ class BaseService(object):
             print row[0]
         if commit:
             self.sql_db.commit()
+
+    # Unpacks an XML file into a python object
+    def xml_unpack_file(self,filename):
+        return self.xml_unpack(ET.parse(filename))
+
+    # Unpacks an XML tree into a python object
+    def xml_unpack(self,tree):
+        return self.xml_unpackelement(tree.getroot())
+
+    # Recursively turns XML into a nested object
+    def xml_unpackelement(self,el):
+        obj = {'children':[],'tag':el.tag}
+        for attrib_name in el.attrib:
+            obj[attrib_name] = el.attrib[attrib_name]
+        count = 0
+        for child in el:
+            obj['children'].append(self.xml_unpackelement(child))
+        return obj
 
 
 # Static methods
