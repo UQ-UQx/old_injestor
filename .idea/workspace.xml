@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/coursestructure/service.py" afterPath="$PROJECT_DIR$/services/coursestructure/service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="injestor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +32,16 @@
       <file leaf-file-name="service.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/coursestructure/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="10" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.4949349" vertical-offset="1463" max-vertical-offset="2565">
+            <state line="60" column="18" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5930408" vertical-offset="558" max-vertical-offset="2812">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baseservice.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baseservice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="209" column="66" selection-start="7338" selection-end="7396" vertical-scroll-proportion="-14.307693" vertical-offset="3447" max-vertical-offset="5852">
               <folding />
             </state>
           </provider>
@@ -42,7 +50,7 @@
       <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2166">
+            <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2033">
               <folding>
                 <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
               </folding>
@@ -90,7 +98,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="822" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -524,7 +532,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="822" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -762,31 +770,6 @@
         <state line="23" column="20" selection-start="432" selection-end="432" vertical-scroll-proportion="0.184765" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/problem/1e80d252d686454498533e403a6a2ec0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3078" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/chapter/2f363708476043f99977fe7d5dd6168e.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/course/1T2014.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="631" selection-end="631" vertical-scroll-proportion="0.12448812" vertical-offset="0" max-vertical-offset="1221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/sequential/585c9eaabfb54169a50dd0fb9ec60a1c.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/vertical/0cefb841d93b421581f768c3cc82582d.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.061588332" vertical-offset="0" max-vertical-offset="1234" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/mongoimport/info.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="1" selection-start="654" selection-end="654" vertical-scroll-proportion="0.4411277" vertical-offset="0" max-vertical-offset="1206" />
@@ -795,11 +778,6 @@
     <entry file="file://$PROJECT_DIR$/services/coursestructure/info.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="256" selection-end="256" vertical-scroll-proportion="0.10777958" vertical-offset="0" max-vertical-offset="5852" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/course_structure/.gitignore">
@@ -821,9 +799,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baseservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="66" selection-start="7338" selection-end="7396" vertical-scroll-proportion="-14.307693" vertical-offset="3447" max-vertical-offset="5852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/coursestructure/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="10" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.4949349" vertical-offset="1463" max-vertical-offset="2565">
+        <state line="60" column="18" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5930408" vertical-offset="558" max-vertical-offset="2812">
           <folding />
         </state>
       </provider>

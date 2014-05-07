@@ -49,13 +49,25 @@ class Coursestructure(baseservice.BaseService):
             dircount = innerpath.count('/')
             if dircount == 0:
                 #for files not in a directory
-                for file in filenames:
-                    incpath = os.path.join(dirname, file)
-                    finpath = os.path.join(filepaths['finished'], file)
-                    os.rename(incpath, finpath)
+                for filename in filenames:
+                    self.movefiletofinish(dirname,filename)
             if dircount == 1:
                 self.parsecourse(dirname)
+                self.movedirtofinish(dirname)
         return loaded
+
+    def movefiletofinish(self, dirname, filename):
+        incpath = os.path.join(dirname, filename)
+        finpath = incpath.replace("incoming", "finished", 1)
+        os.rename(incpath, finpath)
+
+    def movedirtofinish(self, dirname):
+        incpath = dirname
+        finpath = incpath.replace("incoming", "finished", 1)
+        print incpath
+        print finpath
+        os.rename(incpath, finpath)
+
 
     def parsecourse(self, path):
         coursename = os.path.basename(os.path.normpath(path))
@@ -74,6 +86,7 @@ class Coursestructure(baseservice.BaseService):
         course = self.add_linked_file_xml(path,course)
         self.status['progress']['current'] = 8
         f = open(self.outputdir+'/'+coursename+'.json', 'w+')
+        self.status['progress']['current'] = 9
         f.write(json.dumps(course))
         self.status['progress']['current'] = 10
 
