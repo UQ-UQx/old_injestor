@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.php" afterPath="$PROJECT_DIR$/www/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="injestor.iws" />
@@ -33,16 +32,25 @@
       <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/coursestructure/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="46" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2812">
+            <state line="88" column="46" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0" vertical-offset="1672" max-vertical-offset="3002">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="32" selection-start="575" selection-end="575" vertical-scroll-proportion="0.4879154" vertical-offset="0" max-vertical-offset="662">
+            <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="-8.36" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.08444444" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -102,6 +110,7 @@
         <option value="$PROJECT_DIR$/www/course_structure/.gitignore" />
         <option value="$PROJECT_DIR$/services/coursestructure/service.py" />
         <option value="$PROJECT_DIR$/www/index.php" />
+        <option value="$PROJECT_DIR$/www/.htaccess" />
       </list>
     </option>
   </component>
@@ -137,34 +146,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="injestor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="injestor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="services">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,6 +262,34 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="coursestructure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="injestor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="injestor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="services">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -551,7 +560,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28612304" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29470673" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -559,11 +568,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -583,6 +592,15 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2166">
+          <folding>
+            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/coursestructure/service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="18" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="2812">
@@ -819,15 +837,6 @@
         <state line="3" column="11" selection-start="70" selection-end="70" vertical-scroll-proportion="0.04619125" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-          <folding>
-            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baseservice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="209" column="66" selection-start="7338" selection-end="7396" vertical-scroll-proportion="0.0" vertical-offset="3971" max-vertical-offset="6004">
@@ -842,9 +851,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
+          <folding>
+            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="575" selection-end="575" vertical-scroll-proportion="0.4879154" vertical-offset="0" max-vertical-offset="662">
+        <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="-8.36" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.08444444" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
