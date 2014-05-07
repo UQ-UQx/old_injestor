@@ -103,7 +103,7 @@ class Coursestructure(baseservice.BaseService):
                         for key in child_obj:
                             child[key] = child_obj[key]
                         xml_object['children'][index] = self.add_linked_file_xml(basepath,child)
-                index+=1
+                index += 1
         return xml_object
 
 
