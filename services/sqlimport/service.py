@@ -81,7 +81,7 @@ class SQLImport(baseservice.BaseService):
                 coltype = "text"
             query += column.replace("\n","")+" "+coltype+", "
         query += " xhash varchar(200) "
-        query += ", UNIQUE (xhash)"
+        query += ", UNIQUE (xhash), UNIQUE (id)"
         query += " );"
         self.sql_query(query)
         self.sql_tablename = tablename
@@ -96,7 +96,7 @@ class SQLImport(baseservice.BaseService):
         data = line.split("\t")
         data.append(datahash)
         insertdata = '"'+'","'.join(data)+'"'
-        self.sql_query("INSERT IGNORE INTO "+self.sql_tablename+" VALUES ( "+insertdata+" );",True)
+        self.sql_query("REPLACE INTO "+self.sql_tablename+" VALUES ( "+insertdata+" );",True)
         self.status['progress']['current'] += 1
 
 def name():

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="" />
+    <list default="true" id="04f274cb-f220-42ea-a3ed-2852610d3089" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/sqlimport/service.py" afterPath="$PROJECT_DIR$/services/sqlimport/service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="injestor.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,16 +42,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="-8.36" vertical-offset="0" max-vertical-offset="646">
+            <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="4" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
               <folding />
             </state>
           </provider>
@@ -63,12 +66,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="service.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2166">
+            <state line="46" column="66" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.41572124" vertical-offset="228" max-vertical-offset="2033">
               <folding>
-                <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+                <marker date="1399525509000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
               </folding>
             </state>
           </provider>
@@ -101,7 +104,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/services/timefinder/service.py" />
         <option value="$PROJECT_DIR$/services/mongoimport/info.json" />
-        <option value="$PROJECT_DIR$/services/sqlimport/service.py" />
         <option value="$PROJECT_DIR$/services/coursestructure/info.json" />
         <option value="$PROJECT_DIR$/baseservice.py" />
         <option value="$PROJECT_DIR$/data/coursestructure/incoming/UQx-BIOIMG101x-1T2014/course/blah.json" />
@@ -109,14 +111,14 @@
         <option value="$PROJECT_DIR$/services/coursestructure/service.py" />
         <option value="$PROJECT_DIR$/www/index.php" />
         <option value="$PROJECT_DIR$/www/.htaccess" />
+        <option value="$PROJECT_DIR$/services/sqlimport/service.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="821" />
-    <option name="y" value="352" />
-    <option name="width" value="1440" />
-    <option name="height" value="818" />
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1352" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -144,6 +146,34 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="injestor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="injestor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="services">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,102 +224,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqlimport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongoimport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injestor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="coursestructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="injestor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="injestor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="services">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -302,7 +236,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dashboard/src/uqxdashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistory" value="str" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -316,11 +250,11 @@
       <recent name="$PROJECT_DIR$/services/timefinder" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bashscripts" />
       <recent name="$PROJECT_DIR$/data/clickstream/incoming/prod-edxapp-011" />
       <recent name="$PROJECT_DIR$/data/clickstream/incoming" />
       <recent name="$PROJECT_DIR$/data/sqlimport/incoming" />
       <recent name="$PROJECT_DIR$/data/mongoimport/incoming" />
-      <recent name="$PROJECT_DIR$/services/mongoimport" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
@@ -550,7 +484,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="821" y="352" width="1440" height="818" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1352" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -558,7 +492,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29470673" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30420968" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -594,7 +528,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2166">
           <folding>
-            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+            <marker date="1399525509000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
           </folding>
         </state>
       </provider>
@@ -617,7 +551,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="2166">
           <folding>
-            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+            <marker date="1399525509000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
           </folding>
         </state>
       </provider>
@@ -788,11 +722,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09444905" vertical-offset="0" max-vertical-offset="1207" />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09444905" vertical-offset="0" max-vertical-offset="1207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/clickstream/service.py">
@@ -835,13 +769,6 @@
         <state line="3" column="11" selection-start="70" selection-end="70" vertical-scroll-proportion="0.04619125" vertical-offset="0" max-vertical-offset="1234" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baseservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="66" selection-start="7338" selection-end="7396" vertical-scroll-proportion="0.0" vertical-offset="3971" max-vertical-offset="6004">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/coursestructure/service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="46" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2812">
@@ -849,26 +776,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="16" selection-start="1132" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-          <folding>
-            <marker date="1399006814000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="-8.36" vertical-offset="0" max-vertical-offset="646">
+        <state line="11" column="48" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="4" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="66" selection-start="7338" selection-end="7396" vertical-scroll-proportion="0.0" vertical-offset="3971" max-vertical-offset="6004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/sqlimport/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="66" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.41572124" vertical-offset="228" max-vertical-offset="2033">
+          <folding>
+            <marker date="1399525509000" expanded="true" signature="2184:2210" placeholder="CREATE TABLE..IF..." />
+          </folding>
         </state>
       </provider>
     </entry>
