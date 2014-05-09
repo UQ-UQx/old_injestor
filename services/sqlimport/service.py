@@ -73,6 +73,8 @@ class SQLImport(baseservice.BaseService):
         query += " ( "
         for column in columns:
             coltype = "varchar(255)"
+            if column == "id":
+                coltype = "int NOT NULL UNIQUE"
             if column == "key":
                 column = "_key"
             if column == "state" or column == "content" or column == "meta":
@@ -81,14 +83,14 @@ class SQLImport(baseservice.BaseService):
                 coltype = "text"
             query += column.replace("\n","")+" "+coltype+", "
         query += " xhash varchar(200) "
-        query += ", UNIQUE (xhash), UNIQUE (id)"
+        query += ", UNIQUE (xhash)"
         query += " );"
         self.sql_query(query)
         self.sql_tablename = tablename
         return isvalid
 
     def parseline(self,line):
-        if line[:2] == 'id':
+        if line[:2] == 'id' or line[:4] == 'hash':
             return
         datahash = hashlib.sha256(line).hexdigest()
         line = line.replace("\n","")
