@@ -9,7 +9,7 @@ env.remote_base = '/var/uqxparser'
 env.remote_code_dir = env.remote_base+'/src/'+env.projectname
 env.gitname = "injestor"
 
-env.hosts = ['tools']
+env.hosts = ['tools.ceit.uq.edu.au']
 
 def prepare():
     func_gitadd()

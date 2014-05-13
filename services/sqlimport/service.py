@@ -73,6 +73,8 @@ class SQLImport(baseservice.BaseService):
         query += " ( "
         for column in columns:
             coltype = "varchar(255)"
+            if column == "id":
+                coltype = "int NOT NULL UNIQUE"
             if column == "key":
                 column = "_key"
             if column == "state" or column == "content" or column == "meta":
@@ -88,13 +90,15 @@ class SQLImport(baseservice.BaseService):
         return isvalid
 
     def parseline(self,line):
+        if line[:2] == 'id' or line[:4] == 'hash':
+            return
         datahash = hashlib.sha256(line).hexdigest()
         line = line.replace("\n","")
         line = line.replace('"',"''")
         data = line.split("\t")
         data.append(datahash)
         insertdata = '"'+'","'.join(data)+'"'
-        self.sql_query("INSERT IGNORE INTO "+self.sql_tablename+" VALUES ( "+insertdata+" );",True)
+        self.sql_query("REPLACE INTO "+self.sql_tablename+" VALUES ( "+insertdata+" );",True)
         self.status['progress']['current'] += 1
 
 def name():
