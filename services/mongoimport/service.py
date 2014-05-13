@@ -98,6 +98,13 @@ class Mongoimport(baseservice.BaseService):
                     document[key] = ObjectId(str(item["$oid"]))
                 if "$date" in item:
                     document[key] = datetime.utcfromtimestamp(item["$date"]/1e3)
+            # Process "parent_ids"
+            if key == "parent_ids" and item:
+                parent_ids = []
+                for sub_item in item:
+                    if "$oid" in sub_item:
+                        parent_ids.append(ObjectId(str(sub_item["$oid"])))
+                document[key] = parent_ids
         return document
 
     def insert_with_id(self, document):
