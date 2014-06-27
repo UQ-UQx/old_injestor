@@ -48,6 +48,7 @@ class SQLImport(baseservice.BaseService):
                 self.status['progress']['current'] = 0
                 self.parselines(self.parseline)
             self.movetofinish()
+        self.reset_cache('sql')
 
     def createtableandvalid(self,tablename,columns=[]):
         isvalid = False

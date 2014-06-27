@@ -42,7 +42,7 @@ class Clickstream(baseservice.BaseService):
                         maxdates[dirname] = filetime
 
         #load a file
-        self.status['progress']['total'] = str(self.numfiles())
+        self.status['progress']['total'] = str(self.numfiles() + 20)
         self.status['progress']['current'] = 1
         while self.load_incoming_file():
             if self.validclickstreamlog(self.filepath,self.filename):
@@ -62,8 +62,10 @@ class Clickstream(baseservice.BaseService):
                     print "Importing "+self.filepath+"/"+self.filename+" "+str(self.status['progress']['current'])+" out of "+str(self.status['progress']['total'])
                 else:
                     print "Already done, ignoring"
-            self.movetofinish()
             self.status['progress']['current'] += 1
+            self.movetofinish()
+        self.reset_cache('clickstream')
+        self.status['progress']['current'] += 20
 
     def checkwritten(self,filepath,filename):
         paths = baseservice.getdatafilepaths(self.servicename)

@@ -4,6 +4,7 @@ import importlib
 import logging
 import time
 import os
+import urllib
 import MySQLdb
 from pymongo import MongoClient
 import hashlib
@@ -140,6 +141,14 @@ class BaseService(object):
                     self.log("error", "Could not connect to MySQL: %s" % e)
                     return False
         return False
+
+    # Calls the dashboard reset function
+    def reset_cache(self, type):
+        #self.setaction('resetting cache for '+type)
+        #response = urllib.urlopen(str('http://localhost:8888/dashboard/visualization_reload/'+str(type)))
+        #self.setaction('reset cache for '+type)
+        #print response.read()
+        pass
 
     # Gets the name of the service based on its class name
     def set_service_name(self):

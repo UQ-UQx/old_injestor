@@ -85,6 +85,7 @@ class Mongoimport(baseservice.BaseService):
             else:
                 self.setaction("loading file " + self.filename + ". It is not in our list.")
                 self.movetofinish()
+        self.reset_cache('forum')
 
     @staticmethod
     def format_document(document):
