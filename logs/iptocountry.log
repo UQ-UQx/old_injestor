@@ -113,3 +113,17 @@ INFO:baseservice:2014_04_15 14_43_26 iptocountry: (info) Run Loop
 INFO:baseservice:2014_04_15 14_43_26 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
 INFO:baseservice:2014_04_15 14_43_26 iptocountry: (info) checked collection (ip): 0 FOR online_access_logs
 INFO:baseservice:2014_04_15 14_43_26 iptocountry: (info) checked collection (ip): 0 FOR clickstream
+INFO:baseservice:2014_05_21 16_22_03 iptocountry: (info) Starting service
+INFO:baseservice:2014_05_21 16_22_03 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_05_21 16_22_03 iptocountry: (info) Running Setup
+INFO:baseservice:2014_05_21 16_24_28 iptocountry: (info) Starting service
+INFO:baseservice:2014_05_21 16_24_28 iptocountry: (info) Loading Mongo
+INFO:baseservice:2014_05_21 16_24_28 iptocountry: (info) Running Setup
+INFO:baseservice:2014_05_21 16_24_28 iptocountry: (info) Run Loop
+INFO:baseservice:2014_05_21 16_24_28 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_05_21 16_36_50 iptocountry: (info) checked collection (ip): 32300134 FOR clickstream
+INFO:baseservice:2014_05_22 07_48_45 iptocountry: (info) Run Loop
+INFO:baseservice:2014_05_22 07_48_45 iptocountry: (info) checked collection (ip): 0 FOR system.indexes
+INFO:baseservice:2014_05_22 08_13_28 iptocountry: (info) checked collection (ip): 4404 FOR clickstream
+INFO:baseservice:2014_05_22 09_08_07 iptocountry: (info) Run Loop
+INFO:baseservice:2014_05_22 09_08_07 iptocountry: (info) checked collection (ip): 0 FOR system.indexes

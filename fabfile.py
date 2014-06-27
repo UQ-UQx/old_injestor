@@ -17,18 +17,18 @@ def prepare():
 
 def deploy():
     with hide('output', 'running', 'warnings'), settings(warn_only=True):
-        remote_vc("%s/injestor.py stop" % env.remote_code_dir, "Stopping Injestor")
+        remote_vc("%s/injestor.py stop" % env.remote_code_dir,"Stopping Injestor")
 
     with hide('output', 'running', 'warnings'), settings(warn_only=True):
         if run("test -d %s" % env.remote_code_dir).failed:
             print "ERROR: NOT CLONED YET"
-            sudo("mkdir -p "+env.remote_code_dir, "Creating Directory", True)
+            sudo("mkdir -p "+env.remote_code_dir, "Creating Directory",True)
             sudo("git clone https://uqxtechnical@github.com/UQ-UQx/"+env.gitname+".git %s" % env.remote_code_dir)
     with cd(env.remote_code_dir):
         remote_vc("git stash", "Resetting changes to remote",True)
-        remote_vc("git reset --hard", "Resetting changes to remote", True)
+        remote_vc("git reset --hard", "Resetting changes to remote",True)
         remote_vc("git pull", "Pulling from git",True)
-        remote_vc("%s/injestor.py start" % env.remote_code_dir, "Starting Injestor")
+        remote_vc("%s/injestor.py start" % env.remote_code_dir,"Starting Injestor")
 
 
 def create():
@@ -45,7 +45,6 @@ def func_gitadd():
         git_message = "Anonymous Hotfix"
     local_ve("git add . && git commit -a -m \"" + git_message + "\"", "Git adding", True)
 
-
 def func_gitpush():
     local_ve("git push", "Pushing to github")
 
@@ -59,7 +58,6 @@ def local_ve(cmd, message, ignoreerror=False):
         result = local(cmd, capture=True)
         if not ignoreerror and result.failed and not confirm("+ Error: " + message + " failed. Continue anyway?"):
             abort("Aborting at user request.")
-
 
 def remote_vc(cmd, message, showout=False):
     if verbose:

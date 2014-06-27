@@ -58,6 +58,7 @@ class Mongoimport(baseservice.BaseService):
         #ToDo: How to take files from qcloud and put into our incoming folder?
         ###
         #load a file
+        print self.mongo_files
         while self.load_incoming_file():
             print self.filename
             if self.filename in self.mongo_files:
