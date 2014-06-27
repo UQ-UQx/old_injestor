@@ -84,6 +84,10 @@ class Coursestructure(baseservice.BaseService):
         course = self.xml_unpack_file(coursefile)
         self.status['progress']['current'] = 4
         course = self.add_linked_file_xml(path,course)
+        policyfileurl = os.path.join(path, 'policies', term, 'policy.json')
+        policyfile=open(policyfileurl).read()
+        policydata = json.loads(policyfile)
+        course['policy'] = policydata
         self.status['progress']['current'] = 8
         f = open(self.outputdir+'/'+coursename+'.json', 'w+')
         self.status['progress']['current'] = 9
