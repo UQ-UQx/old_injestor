@@ -24,6 +24,10 @@
         {
             "course_code": "Crime101x-3T2014",
             "platform": "prod"
+        },
+        {
+            "course_code": "TROPIC101x-1T2014",
+            "platform": "prod"
         }
     ]
 }
