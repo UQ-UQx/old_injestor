@@ -34,7 +34,7 @@ class Clickstream(baseservice.BaseService):
         paths = baseservice.getdatafilepaths(self.servicename)
         for dirname, dirnames, filenames in os.walk(paths['incoming']):
             for filename in filenames:
-                if self.validclickstreamlog(dirname,filename):
+                if self.validclickstreamlog(dirname, filename):
                     filetime = self.filenametodate(filename)
                     if dirname not in maxdates:
                         maxdates[dirname] = filetime
@@ -67,12 +67,12 @@ class Clickstream(baseservice.BaseService):
         self.reset_cache('clickstream')
         self.status['progress']['current'] += 20
 
-    def checkwritten(self,filepath,filename):
+    def checkwritten(self, filepath, filename):
         paths = baseservice.getdatafilepaths(self.servicename)
         existingpath = False
         sig = filepath+"/"+filename
         print "Sig is "+sig
-        with open(os.path.join(paths['basedata'],'injested.txt'), "r") as myfile:
+        with open(os.path.join(paths['basedata'], 'injested.txt'), "r") as myfile:
             for line in myfile:
                 sngline = line.replace("\n","")
                 if sngline == sig:
@@ -80,17 +80,17 @@ class Clickstream(baseservice.BaseService):
                     break
         return existingpath
 
-    def addwritten(self,filepath,filename):
+    def addwritten(self, filepath, filename):
         paths = baseservice.getdatafilepaths(self.servicename)
-        with open(os.path.join(paths['basedata'],'injested.txt'), "a") as myfile:
+        with open(os.path.join(paths['basedata'], 'injested.txt'), "a") as myfile:
             myfile.write(filepath+"/"+filename+"\n")
 
-    def filenametodate(self,filename):
-        date = filename.replace("_UQx.log","")
+    def filenametodate(self, filename):
+        date = filename.replace("_UQx.log", "")
         date = time.strptime(date, "%Y-%m-%d")
         return date
 
-    def validclickstreamlog(self,filepath,filename):
+    def validclickstreamlog(self, filepath, filename):
         valid = False
         try:
             if filename.find('.log') != -1:
