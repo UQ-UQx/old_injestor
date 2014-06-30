@@ -2,11 +2,7 @@
 import hashlib
 
 import os
-import time
 import baseservice
-import peewee
-from peewee import *
-import MySQLdb
 
 basepath = os.path.dirname(__file__)
 
@@ -50,7 +46,7 @@ class SQLImport(baseservice.BaseService):
             self.movetofinish()
         self.reset_cache('sql')
 
-    def createtableandvalid(self,tablename,columns=[]):
+    def createtableandvalid(self, tablename, columns=[]):
         isvalid = False
         print tablename
         if self.filename.find('UQx-') > -1 and self.filename.find('-prod-analytics.sql') > -1:

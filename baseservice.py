@@ -105,6 +105,7 @@ class BaseService(object):
 
     # Connects to a Mongo Database
     def connect_to_mongo(self, db_name, collection_name):
+        db_name = safe_name(db_name)
         try:
             if self.mongo_client is None:
                 self.mongo_client = MongoClient('localhost', 27017)
@@ -123,6 +124,7 @@ class BaseService(object):
 
     # Connects to a MySQL Database
     def connect_to_sql(self, db_name, force_reconnect=False, create_db=True):
+        db_name = safe_name(db_name)
         if (self.sql_dbname != db_name or force_reconnect) and db_name != "":
             try:
                 self.sql_db = MySQLdb.connect(host=self.sql_host, user=self.sql_user, passwd=self.sql_pass, db=db_name)
@@ -274,6 +276,8 @@ class BaseService(object):
 
 
 # Static methods
+def safe_name(filename):
+    return str(filename).replace('.','_')
 
 
 # Load a module
