@@ -2,6 +2,6 @@
 
 from service import *
 
-print "DING"
+print "Starting Test"
 
 runservice()
