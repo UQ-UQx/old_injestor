@@ -23,6 +23,10 @@ Clone the repository
 ```bash
 git clone https://github.com/UQ-UQx/injestor.git [BASE_PATH]
 ```
+Install pip requirements
+```bash
+pip install -r requirements.txt
+```
 Set injestor configuration
 ```bash
 cp [BASE_PATH]/config.example.py [BASE_PATH]/config.py
