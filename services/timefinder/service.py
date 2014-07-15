@@ -1,15 +1,9 @@
 #!/usr/bin/python
 from datetime import datetime
 
-import time
-import apache_log_parser
 import baseservice
 from bson import ObjectId
-import geoip2
-from geoip2 import database
-from geoip2.errors import *
 import os
-from pymongo import *
 import dateutil.parser
 
 basepath = os.path.dirname(__file__)

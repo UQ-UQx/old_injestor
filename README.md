@@ -25,6 +25,7 @@ git clone https://github.com/UQ-UQx/injestor.git [BASE_PATH]
 ```
 Install pip requirements
 ```bash
+sudo apt-get install libxml2-dev libxslt1-dev python-dev
 pip install -r requirements.txt
 ```
 Set injestor configuration
