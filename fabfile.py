@@ -9,11 +9,9 @@ env.github_url = config.FAB_GITHUB_URL
 env.remote_code_dir = config.FAB_REMOTE_PATH
 env.hosts = config.FAB_HOSTS
 
-
 def prepare():
     func_gitadd()
     func_gitpush()
-
 
 def deploy():
     with hide('warnings'), settings(warn_only=True): #'output', 'running',
@@ -58,7 +56,6 @@ def local_ve(cmd, message, ignoreerror=False):
         result = local(cmd, capture=True)
         if not ignoreerror and result.failed and not confirm("+ Error: " + message + " failed. Continue anyway?"):
             abort("Aborting at user request.")
-
 
 def remote_vc(cmd, message, showout=False):
     if verbose:

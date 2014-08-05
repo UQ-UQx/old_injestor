@@ -15,6 +15,7 @@ try:
 except ImportError:
     print "You do not have a config file, copy config.example.py to config.py"
     exit()
+import courses
 
 basepath = os.path.dirname(__file__)
 
@@ -72,6 +73,7 @@ class BaseService(object):
         self.collectionname = ""
         self.hashfields = []
         self.servicename = 'baseservice'
+        self.loop = True
 
         #Private
         self.path_incoming = basepath + '/data/incoming'
@@ -100,7 +102,7 @@ class BaseService(object):
         self.log("info", "Running Setup")
         self.setaction('loading')
         self.setup()
-        while True:
+        while self.loop:
             self.log("info", "Run Loop")
             self.setaction('running')
             self.run()
@@ -153,10 +155,10 @@ class BaseService(object):
     # Calls the dashboard reset function
     def reset_cache(self, type):
         if config.RESET_CACHE:
-            self.setaction('resetting cache for '+type)
-            response = urllib.urlopen(str(config.RESET_CACHE_URL+str(type)))
-            self.setaction('reset cache for '+type)
-            print response.read()
+            #self.setaction('resetting cache for '+type)
+            #response = urllib.urlopen(str(config.RESET_CACHE_URL+str(type)))
+            #self.setaction('reset cache for '+type)
+            #print response.read()
         pass
 
     # Gets the name of the service based on its class name
@@ -216,6 +218,11 @@ class BaseService(object):
             for _ in filenames:
                 count += 1
         return count
+    
+    # return the path of subsetbackup
+    def get_backup_path(self):
+        paths = getdatafilepaths(self.servicename)
+        return paths['subsetbackup']     
 
     # Moves the open file from incoming to finished, including subdirectories
     def movetofinish(self, prepend_date=False):
@@ -280,6 +287,11 @@ class BaseService(object):
         for child in el:
             obj['children'].append(self.xml_unpackelement(child))
         return obj
+    
+    def get_course(self, course_id):
+        if course_id in courses.EDX_DATABASES:
+            return courses.EDX_DATABASES[course_id]
+        return None
 
 
 # Static methods
@@ -328,4 +340,8 @@ def getdatafilepaths(module_name):
     paths['incoming'] = os.path.join(thebasepath, 'data', module_name, 'incoming')
     paths['process'] = os.path.join(thebasepath, 'data', module_name, 'process')
     paths['finished'] = os.path.join(thebasepath, 'data', module_name, 'finished')
+
+    if module_name == "extractsample":
+        paths['subsetbackup'] = os.path.join(thebasepath, 'data', module_name, 'subsetbackup')
+
     return paths

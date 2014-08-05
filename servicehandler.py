@@ -35,14 +35,15 @@ class ServiceLoader():
     def autoload(self):
         servicespath = os.path.join(basepath,'services')
         for servicename in os.listdir(servicespath):
-            servicepath = os.path.join(servicespath,servicename,'service.py')
-            if(os.path.exists(servicepath)):
-                logger.info("Starting module "+servicename)
-                servicemodule = baseservice.load_module(servicename)
-                servicethread = threading.Thread(target=servicemodule.runservice)
-                servicethread.start()
-                self.servicethreads.append(servicethread)
-                self.servicemodules.append(servicemodule)
+            if servicename != 'extractsample':
+                servicepath = os.path.join(servicespath,servicename,'service.py')
+                if(os.path.exists(servicepath)):
+                    logger.info("Starting module "+servicename)
+                    servicemodule = baseservice.load_module(servicename)
+                    servicethread = threading.Thread(target=servicemodule.runservice)
+                    servicethread.start()
+                    self.servicethreads.append(servicethread)
+                    self.servicemodules.append(servicemodule)
 
 
 class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
