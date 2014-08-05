@@ -9,6 +9,7 @@ import MySQLdb
 from pymongo import MongoClient
 import hashlib
 import xml.etree.ElementTree as ET
+import courses
 
 basepath = os.path.dirname(__file__)
 
@@ -66,6 +67,7 @@ class BaseService(object):
         self.collectionname = ""
         self.hashfields = []
         self.servicename = 'baseservice'
+        self.loop = True
 
         #Private
         self.path_incoming = basepath + '/data/incoming'
@@ -94,7 +96,7 @@ class BaseService(object):
         self.log("info", "Running Setup")
         self.setaction('loading')
         self.setup()
-        while True:
+        while self.loop:
             self.log("info", "Run Loop")
             self.setaction('running')
             self.run()
@@ -209,6 +211,11 @@ class BaseService(object):
             for _ in filenames:
                 count += 1
         return count
+    
+    # return the path of subsetbackup
+    def get_backup_path(self):
+        paths = getdatafilepaths(self.servicename)
+        return paths['subsetbackup']     
 
     # Moves the open file from incoming to finished, including subdirectories
     def movetofinish(self, prepend_date=False):
@@ -273,6 +280,11 @@ class BaseService(object):
         for child in el:
             obj['children'].append(self.xml_unpackelement(child))
         return obj
+    
+    def get_course(self, course_id):
+        if course_id in courses.EDX_DATABASES:
+            return courses.EDX_DATABASES[course_id]
+        return None
 
 
 # Static methods
@@ -321,4 +333,7 @@ def getdatafilepaths(module_name):
     paths['incoming'] = os.path.join(thebasepath, 'data', module_name, 'incoming')
     paths['process'] = os.path.join(thebasepath, 'data', module_name, 'process')
     paths['finished'] = os.path.join(thebasepath, 'data', module_name, 'finished')
+    if module_name == "extractsample":
+        paths['subsetbackup'] = os.path.join(thebasepath, 'data', module_name, 'subsetbackup')
+    
     return paths

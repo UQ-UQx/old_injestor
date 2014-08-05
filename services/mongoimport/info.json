@@ -28,6 +28,10 @@
         {
             "course_code": "TROPIC101x-1T2014",
             "platform": "prod"
+        },
+        {
+            "course_code": "Sense101x-3T2014",
+            "platform": "prod"
         }
     ]
 }

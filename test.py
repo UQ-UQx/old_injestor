@@ -12,8 +12,13 @@ else:
     #try:
     mod = baseservice.load_module(moduleName)
     print "Test run of service: "+moduleName
-    print mod.runservice()
+    #print sys.argv
+    if moduleName == "extractsample":
+        print mod.runservice(sys.argv[2], sys.argv[3], sys.argv[4])
+    elif moduleName == "exportsample":
+        print mod.runservice(sys.argv[2])
+    else:
+        print mod.runservice()
+
+        
     print "Finished test run"
-    #except Exception, e:
-        #print "Error: Invalid service name: "+moduleName
-        #print e
