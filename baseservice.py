@@ -159,7 +159,7 @@ class BaseService(object):
             #response = urllib.urlopen(str(config.RESET_CACHE_URL+str(type)))
             #self.setaction('reset cache for '+type)
             #print response.read()
-        pass
+            pass
 
     # Gets the name of the service based on its class name
     def set_service_name(self):
