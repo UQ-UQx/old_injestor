@@ -37,7 +37,7 @@ class Coursestructure(baseservice.BaseService):
 
     def setup(self):
         #Get meta-data from info.json
-        print "INITIALIZING"
+        pass
 
     def run(self):
         self.setaction('Parsing courses')
@@ -80,7 +80,6 @@ class Coursestructure(baseservice.BaseService):
         course = {}
         #Parse the course
         coursefile = os.path.join(path, 'course', term + '.xml')
-        print "Parsing " + coursename + " at " + path
         course = self.xml_unpack_file(coursefile)
         self.status['progress']['current'] = 4
         course = self.add_linked_file_xml(path,course)

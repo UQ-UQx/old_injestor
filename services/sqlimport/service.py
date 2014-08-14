@@ -48,7 +48,6 @@ class SQLImport(baseservice.BaseService):
 
     def createtableandvalid(self, tablename, columns=[]):
         isvalid = False
-        print tablename
         if self.filename.find('UQx-') > -1 and self.filename.find('-prod-analytics.sql') > -1:
             isvalid = True
         if not isvalid:

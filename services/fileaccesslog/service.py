@@ -49,7 +49,6 @@ class Fileaccesslog(baseservice.BaseService):
         pass
 
     def run(self):
-        print "Running"
         self.setaction('test running')
         self.status['status'] = 'running'
         while self.load_incoming_file():

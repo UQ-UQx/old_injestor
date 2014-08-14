@@ -1,14 +1,10 @@
 #!/usr/bin/python
 
 import os
-import time
 import json
-import pymongo
 from datetime import datetime
 from bson.objectid import ObjectId
 import baseservice
-
-import pprint
 
 basepath = os.path.dirname(__file__)
 
@@ -53,14 +49,11 @@ class Mongoimport(baseservice.BaseService):
                 self.mongo_files.append(file_name)
 
     def run(self):
-        print self.mongo_dbname
         self.setaction('test running')
         #ToDo: How to take files from qcloud and put into our incoming folder?
         ###
         #load a file
-        print self.mongo_files
         while self.load_incoming_file():
-            print self.filename
             if self.filename in self.mongo_files:
                 if self.filename.endswith(".mongo"):
                     self.connect_to_mongo(self.mongo_dbname, self.filename[:-6])
@@ -68,20 +61,16 @@ class Mongoimport(baseservice.BaseService):
                     pass
                 self.setaction("loading file " + self.filename + " to " + self.mongo_dbname)
                 #ToDo: injest into mongodb
-                ###
                 self.status['progress']['total'] = self.numlines()
                 self.status['progress']['current'] = 0
                 for line in self.file:
                     document = json.loads(line)
                     if '_id' in document:
                         self.insert_with_id(document)
-                        #print "objects added %d" % self.objects_added
                     else:
                         #ToDo: point unique fields
                         self.mongo_insert(self.format_document(document))
                     self.status['progress']['current'] += 1
-                    #print "status is "+str(self.status['progress']['current'])+' out of '+str(self.status['progress'][
-                    #    'total'])
                 self.movetofinish()
             else:
                 self.setaction("loading file " + self.filename + ". It is not in our list.")
@@ -112,7 +101,6 @@ class Mongoimport(baseservice.BaseService):
     def insert_with_id(self, document):
         document = self.format_document(document)
         doc_id = document.pop('_id')
-        #print doc_id
         done = self.mongo_collection.update({"_id": doc_id}, {"$set": document}, upsert=True)
         if done['updatedExisting']:
             pass

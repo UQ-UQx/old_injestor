@@ -24,7 +24,6 @@ basepath = os.path.dirname(__file__)
 class BaseService(object):
 
     def __init__(self):
-        print "INITING"
         self.version = "development"
         # Status for the Rest API
         self.status = {
@@ -108,7 +107,7 @@ class BaseService(object):
             self.run()
             self.setaction('sleeping')
             self.status['lastawake'] = time.strftime('%Y-%m-%d %H:%M:%S')
-            print "Going to sleep"
+            self.log("info", "Going to sleep")
             time.sleep(60)
 
     # Connects to a Mongo Database

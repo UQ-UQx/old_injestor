@@ -1,5 +1,4 @@
 from SocketServer import ThreadingMixIn
-import importlib
 import json
 import logging
 import os
@@ -8,20 +7,25 @@ import BaseHTTPServer
 import threading
 from time import sleep
 import baseservice
-
-ZRandom = "HELLO"
+import time
 
 basepath = os.path.dirname(__file__)
 
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
-logging.basicConfig(filename=basepath+'/logs/handler.log',level=logging.DEBUG,formatter=formatter)
+logging.basicConfig(filename=basepath+'/logs/handler.log', level=logging.DEBUG, formatter=formatter)
 logger = logging.getLogger(__name__)
 
 #Web server
-ServerClass  = BaseHTTPServer.HTTPServer
-Protocol     = "HTTP/1.0"
-ServerPort   = 8850
-TestCounter  = 0
+ServerClass = BaseHTTPServer.HTTPServer
+Protocol = "HTTP/1.0"
+ServerPort = 8850
+
+
+def log(message):
+    mlog = time.strftime('%Y_%m_%d %H_%M_%S') + " " + "Service Handler" + ": (info) " + message
+    print mlog
+    logger.info(mlog)
+
 
 class ServiceLoader():
 
@@ -29,16 +33,16 @@ class ServiceLoader():
     servicemodules = []
 
     def __init__(self):
-        logger.info("Starting Service Loader")
+        log("Starting Service Loader")
         self.autoload()
 
     def autoload(self):
-        servicespath = os.path.join(basepath,'services')
+        servicespath = os.path.join(basepath, 'services')
         for servicename in os.listdir(servicespath):
             if servicename != 'extractsample':
-                servicepath = os.path.join(servicespath,servicename,'service.py')
-                if(os.path.exists(servicepath)):
-                    logger.info("Starting module "+servicename)
+                servicepath = os.path.join(servicespath, servicename, 'service.py')
+                if os.path.exists(servicepath):
+                    log("Starting module "+servicename)
                     servicemodule = baseservice.load_module(servicename)
                     servicethread = threading.Thread(target=servicemodule.runservice)
                     servicethread.start()
@@ -71,6 +75,7 @@ class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             response['statuscode'] = 404
         self.wfile.write(json.dumps(response))
 
+
 class ThreadedHTTPServer(ThreadingMixIn, BaseHTTPServer.HTTPServer):
 
     allow_reuse_address = True
@@ -78,6 +83,7 @@ class ThreadedHTTPServer(ThreadingMixIn, BaseHTTPServer.HTTPServer):
     def shutdown(self):
         self.socket.close()
         BaseHTTPServer.HTTPServer.shutdown(self)
+
 
 class Servicehandler():
 
@@ -94,13 +100,12 @@ class Servicehandler():
         server_address = ('0.0.0.0', ServerPort)
         ResponseHandler.protocol_version = Protocol
         self.server = ThreadedHTTPServer(server_address, ResponseHandler)
-        logger.info("Starting Web Server")
+        log("Starting Web Server")
         self.start_webserver()
-        logger.info("Sleeping main thread")
+        log("Sleeping Main Thread")
         self.sleepmainthread()
 
     def sleepmainthread(self):
-        #logger.info("MAIN THREAD")
         sleep(2)
         self.sleepmainthread()
 

@@ -54,7 +54,6 @@ class Clickstream(baseservice.BaseService):
                     print "THIS IS MAX DATE, NEED TO IGNORE IT"
                     pass
                 elif not self.checkwritten(self.filepath,self.filename):
-                    print "loading clickstream file "+self.filepath+"/"+self.filename
                     cmd = "mongoimport --db "+self.mongo_dbname+" --collection "+self.mongo_collectionname+" < "+self\
                         .filepath+"/"+self.filename
                     os.system(cmd)
@@ -71,7 +70,6 @@ class Clickstream(baseservice.BaseService):
         paths = baseservice.getdatafilepaths(self.servicename)
         existingpath = False
         sig = filepath+"/"+filename
-        print "Sig is "+sig
         with open(os.path.join(paths['basedata'], 'injested.txt'), "r") as myfile:
             for line in myfile:
                 sngline = line.replace("\n","")
@@ -98,7 +96,6 @@ class Clickstream(baseservice.BaseService):
             if filepath.find('-edge-') != -1:
                 valid = False
         except:
-            print "BAD"
             pass
         return valid
 
