@@ -8,6 +8,7 @@ import threading
 from time import sleep
 import baseservice
 import time
+import config
 
 basepath = os.path.dirname(__file__)
 
@@ -39,7 +40,7 @@ class ServiceLoader():
     def autoload(self):
         servicespath = os.path.join(basepath, 'services')
         for servicename in os.listdir(servicespath):
-            if servicename != 'extractsample':
+            if servicename not in config.ignore_services:
                 servicepath = os.path.join(servicespath, servicename, 'service.py')
                 if os.path.exists(servicepath):
                     log("Starting module "+servicename)
