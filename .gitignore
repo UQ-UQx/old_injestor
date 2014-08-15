@@ -12,3 +12,5 @@ finished/
 .idea
 config.py
 *.log
+
+logs/handler.log
