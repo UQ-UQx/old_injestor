@@ -89,6 +89,7 @@ class BaseService(object):
 
     # Starting the base service
     def initialize(self):
+        print "initialize"
         self.set_service_name()
         self.setup_logging()
         self.log("info", "Starting service")
@@ -98,6 +99,7 @@ class BaseService(object):
         if self.sql_enabled:
             self.log("info", "Loading MySQL")
             self.connect_to_sql(self.sql_dbname, True)
+
         self.log("info", "Running Setup")
         self.setaction('loading')
         self.setup()
@@ -111,7 +113,7 @@ class BaseService(object):
             time.sleep(60)
 
     # Connects to a Mongo Database
-    def connect_to_mongo(self, db_name, collection_name):
+    def connect_to_mongo(self, db_name="", collection_name=""):
         db_name = safe_name(db_name)
         try:
             if self.mongo_client is None:
@@ -291,6 +293,11 @@ class BaseService(object):
         if course_id in courses.EDX_DATABASES:
             return courses.EDX_DATABASES[course_id]
         return None
+
+    def get_all_courses(self):
+        course_dict = dict(courses.EDX_DATABASES)
+        return course_dict
+
 
 
 # Static methods

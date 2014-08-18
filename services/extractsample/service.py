@@ -12,7 +12,7 @@ class ExtractSample(baseservice.BaseService):
         self.course_id = course_id
         self.sample_size = sample_size
         self.pass_ratio = pass_ratio
-        self.course = self.get_course(course_id);
+        self.course = self.get_course(course_id)
         #print course
         
         ExtractSample.inst = self
@@ -29,7 +29,7 @@ class ExtractSample(baseservice.BaseService):
         
         
     def run(self):
-        if self.sql_db == None:
+        if self.sql_db is None:
             self.connect_to_sql(self.sql_dbname)
         self.cursor = self.sql_db.cursor()
 
@@ -217,9 +217,16 @@ class ExtractSample(baseservice.BaseService):
             return result[0]
         except:
             print "Error: unable to fetch data"
-                
+
+
+def name():
+    return str("extractsample")
+
+
+def status():
+    return ExtractSample.inst.status
+
+
 def runservice(course_id, sample_size, pass_ratio):
     return ExtractSample(course_id, sample_size, pass_ratio)
 
-
-        

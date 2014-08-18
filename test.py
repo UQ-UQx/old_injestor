@@ -14,6 +14,8 @@ else:
     print "Test run of service: "+moduleName
     if moduleName == "extractsample":
         print mod.runservice(sys.argv[2], sys.argv[3], sys.argv[4])
+    elif moduleName == "personcourse":
+        print mod.runservice(sys.argv[2])
     else:
         print mod.runservice()
     print "Finished test run"
