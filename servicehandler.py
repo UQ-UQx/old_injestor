@@ -56,6 +56,17 @@ class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     response = 0
     servicehandler = None
 
+    def runmodule(self, modulename, meta):
+        servicespath = os.path.join(basepath, 'services')
+        servicename = modulename
+        servicepath = os.path.join(servicespath, modulename, 'service.py')
+        if os.path.exists(servicepath):
+            log("Starting once-off module "+servicename)
+            servicemodule = baseservice.load_module(servicename)
+            print meta
+            servicethread = threading.Thread(target=servicemodule.runservice, args=meta)
+            servicethread.start()
+
     def do_GET(self):
         response = {}
         self.send_response(200)
@@ -67,6 +78,12 @@ class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             for sv in ServiceLoader.servicemodules:
                 status[sv.name()] = sv.status()
             response['response'] = status
+        elif "/run/" in self.path:
+            info = self.path.split("/")
+            service = info[2]
+            meta = info[3:]
+            self.runmodule(service, meta)
+            response['response'] = "starting "+service
         else:
             response['response'] = "error"
             response['statuscode'] = 404
