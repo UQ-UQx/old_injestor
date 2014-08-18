@@ -10,6 +10,6 @@ FAB_HOSTS = []
 FAB_GITHUB_URL = 'https://github.com/UQ-UQx/injestor.git'
 FAB_REMOTE_PATH = '/file/to/your/deployment/location'
 #Ignored services
-ignore_services = ['extractsample', 'personcourse']
+IGNORE_SERVICES = ['extractsample', 'personcourse']
 #File output
-output_directory = '/tmp'
+OUTPUT_DIRECTORY = '/tmp'

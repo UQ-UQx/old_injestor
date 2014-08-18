@@ -40,7 +40,7 @@ class ServiceLoader():
     def autoload(self):
         servicespath = os.path.join(basepath, 'services')
         for servicename in os.listdir(servicespath):
-            if servicename not in config.ignore_services:
+            if servicename not in config.IGNORE_SERVICES:
                 servicepath = os.path.join(servicespath, servicename, 'service.py')
                 if os.path.exists(servicepath):
                     log("Starting module "+servicename)
