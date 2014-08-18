@@ -50,7 +50,6 @@ class Mongoimport(baseservice.BaseService):
 
     def run(self):
         self.setaction('test running')
-        #ToDo: How to take files from qcloud and put into our incoming folder?
         ###
         #load a file
         while self.load_incoming_file():
@@ -60,7 +59,6 @@ class Mongoimport(baseservice.BaseService):
                 else:
                     pass
                 self.setaction("loading file " + self.filename + " to " + self.mongo_dbname)
-                #ToDo: injest into mongodb
                 self.status['progress']['total'] = self.numlines()
                 self.status['progress']['current'] = 0
                 for line in self.file:
@@ -68,7 +66,6 @@ class Mongoimport(baseservice.BaseService):
                     if '_id' in document:
                         self.insert_with_id(document)
                     else:
-                        #ToDo: point unique fields
                         self.mongo_insert(self.format_document(document))
                     self.status['progress']['current'] += 1
                 self.movetofinish()

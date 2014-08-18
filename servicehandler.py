@@ -67,10 +67,6 @@ class ResponseHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             for sv in ServiceLoader.servicemodules:
                 status[sv.name()] = sv.status()
             response['response'] = status
-        elif self.path == "/mypage.html":
-            self.wfile.write("<html><body>")
-            self.wfile.write("Hello World!")
-            self.wfile.write("</body></html>")
         else:
             response['response'] = "error"
             response['statuscode'] = 404
@@ -114,10 +110,3 @@ class Servicehandler():
         self.server_thread = threading.Thread(target=self.server.serve_forever)
         self.server_thread.daemon = True
         self.server_thread.start()
-    #
-    # def wait_webserver(self):
-    #     self.server_thread.join()
-    #
-    # def stop_webserver(self):
-    #     self.server.shutdown()
-    #     self.wait_webserver()
