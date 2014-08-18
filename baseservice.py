@@ -89,7 +89,6 @@ class BaseService(object):
 
     # Starting the base service
     def initialize(self):
-        print "initialize"
         self.set_service_name()
         self.setup_logging()
         self.log("info", "Starting service")
