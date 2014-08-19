@@ -319,7 +319,7 @@ class PersonCourse(baseservice.BaseService):
     def datadump2csv(self, tablename = "personcourse"):
         backup_path = self.get_backup_path()
         current_time = time.strftime('%m%d%Y-%H%M%S')
-        backup_prefix = "PersonCourse" + current_time
+        backup_prefix = "PersonCourse_" + self.course_id + "_" + current_time
         backup_file = os.path.join(backup_path, backup_prefix + ".csv")
 
         if self.sql_pc_conn is None:
