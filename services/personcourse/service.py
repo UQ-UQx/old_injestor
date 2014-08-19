@@ -50,10 +50,6 @@ class PersonCourse(baseservice.BaseService):
             # Create a sql connect for the database Person_Course
             self.sql_pc_conn = self.connect_to_sql(self.sql_pc_conn, "Person_Course", True)
             self.log("info", "MySQL Conn: %s" % self.sql_pc_conn)
-
-            # Create the table "ersoncourse" if not exists
-            self.create_pc_table()
-
             # Create a sql connect for the course database
             self.sql_course_conn = self.connect_to_sql(self.sql_course_conn, "", True)
         self.log("info", "Setup")
@@ -133,7 +129,15 @@ class PersonCourse(baseservice.BaseService):
         pass
 
     def run(self):
+        # Drop the table 'personcourse' if exists
+        self.remove_pc_table()
+
+        # Create the table "personcourse"
+        self.create_pc_table()
+
         for course_id, course in self.courses.items():
+            self.log('info', 'Preparing data for %s ...' % course_id)
+
             # Dict of items of personcourse, key is the user id
             pc_dict = {}
 
@@ -148,7 +152,6 @@ class PersonCourse(baseservice.BaseService):
             #for chapter in chapters:
             #    print chapter['display_name']
             half_chapters = math.ceil(float(len(chapters)) / 2)
-            print half_chapters
 
             # Select the database
             self.sql_course_conn.select_db(course['dbname'])
@@ -158,6 +161,7 @@ class PersonCourse(baseservice.BaseService):
             pc_course_id = course['mongoname']
 
             # find all user_id
+            self.log("info", "{auth_user}")
             query = "SELECT id, is_staff FROM auth_user"
             course_cursor.execute(query)
             result = course_cursor.fetchall()
@@ -171,6 +175,7 @@ class PersonCourse(baseservice.BaseService):
             #print user_id_list
 
             # Set LoE, YoB, gender based on the data in {auth_userprofile}
+            self.log("info", "{auth_userprofile}")
             query = "SELECT user_id, year_of_birth, level_of_education, gender FROM auth_userprofile WHERE user_id in (" + ",".join(["%s"] * len(user_id_list)) + ")"
             query = query % tuple(user_id_list)
             course_cursor.execute(query)
@@ -182,6 +187,7 @@ class PersonCourse(baseservice.BaseService):
                 pc_dict[user_id].set_gender(record[3])
 
             # Set certified based on the data in {certificates_generatedcertificate}
+            self.log("info", "{certificates_generatedcertificate}")
             query = "SELECT user_id, grade, status FROM certificates_generatedcertificate WHERE user_id in (" + ",".join(["%s"] * len(user_id_list)) + ")"
             query = query % tuple(user_id_list)
             course_cursor.execute(query)
@@ -192,6 +198,7 @@ class PersonCourse(baseservice.BaseService):
                 pc_dict[user_id].set_certified(record[2])
 
             # Set start_time based on the data in {student_courseenrollment}
+            self.log("info", "{student_courseenrollment}")
             query = "SELECT user_id, created FROM student_courseenrollment WHERE user_id in (" + ",".join(["%s"] * len(user_id_list)) + ")"
             query = query % tuple(user_id_list)
             course_cursor.execute(query)
@@ -201,6 +208,7 @@ class PersonCourse(baseservice.BaseService):
                 pc_dict[user_id].set_start_time(record[1])
 
             # Set ndays_act and viewed based on the data in {courseware_studentmodule}
+            self.log("info", "{ndays_act: courseware_studentmodule}")
             query = "SELECT student_id, COUNT(DISTINCT SUBSTRING(created, 1, 10)) FROM courseware_studentmodule GROUP BY student_id"
             course_cursor.execute(query)
             result = course_cursor.fetchall()
@@ -214,6 +222,7 @@ class PersonCourse(baseservice.BaseService):
                     self.log("error", "Student id: %s does not exist in {auth_user}." % user_id)
 
             # Set nplay_video based on the data in {courseware_studentmodule}
+            self.log("info", "{nplay_video: courseware_studentmodule}")
             query = "SELECT student_id, COUNT(*) FROM courseware_studentmodule WHERE module_type = 'video' GROUP BY student_id"
             course_cursor.execute(query)
             result = course_cursor.fetchall()
@@ -223,6 +232,7 @@ class PersonCourse(baseservice.BaseService):
                     pc_dict[user_id].set_nplay_video(record[1])
 
             # Set nchapters and explored based on the data in {courseware_studentmodule}
+            self.log("info", "{nchapters: courseware_studentmodule}")
             query = "SELECT student_id, COUNT(DISTINCT module_id) FROM courseware_studentmodule WHERE module_type = 'chapter' GROUP BY student_id"
             course_cursor.execute(query)
             result = course_cursor.fetchall()
@@ -237,6 +247,7 @@ class PersonCourse(baseservice.BaseService):
 
             # Mongo
             # Discussion forum
+            self.log("info", "{discussion_forum}")
             self.mongo_dbname = "discussion_forum"
             self.mongo_collectionname = course['discussiontable']
             self.connect_to_mongo(self.mongo_dbname, self.mongo_collectionname)
@@ -254,6 +265,7 @@ class PersonCourse(baseservice.BaseService):
                     self.log("error", "Author id: %s does not exist in {auth_user}." % user_id)
 
             # Tracking logs
+            self.log("info", "{logs}")
             self.mongo_dbname = "logs"
             self.mongo_collectionname = "clickstream"
             #self.mongo_collectionname = "clickstream_hypers_301x_sample"
@@ -277,6 +289,7 @@ class PersonCourse(baseservice.BaseService):
             #print pc_dict[1000]
 
             # Till now, data preparation has been finished. Check consistent then write them into the database.
+            self.log("info", "save to {personcourse}")
             tablename = "personcourse"
             pc_cursor = self.sql_pc_conn.cursor()
             for user_id, user_data in pc_dict.items():
@@ -322,8 +335,15 @@ class PersonCourse(baseservice.BaseService):
             csv_writer.writerow([i[0] for i in pc_cursor.description]) # write headers
             for record in result:
                 csv_writer.writerow(record)
-
         self.log("info", "The table %s exported to csv file %s" % (tablename, backup_file))
+
+    def remove_pc_table(self):
+        tablename = "personcourse"
+        query = "DROP TABLE IF EXISTS %s" % tablename
+        pc_cursor = self.sql_pc_conn.cursor()
+        pc_cursor.execute(query)
+        self.sql_pc_conn.commit()
+        self.log('info', query)
 
 
 def name():
