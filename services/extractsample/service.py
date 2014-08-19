@@ -33,6 +33,12 @@ class ExtractSample(baseservice.BaseService):
             self.connect_to_sql(self.sql_dbname)
         self.cursor = self.sql_db.cursor()
 
+        ### add a step to remove existing sample tables ###
+        self.remove_exist_tables()
+
+        ### add a step to remove existing sample collections ###
+        self.remove_exist_collections()
+
         # Step 1. randomly choose sample students
         subset_table = self.sql_select_students()
          
@@ -65,6 +71,7 @@ class ExtractSample(baseservice.BaseService):
                     arguments = (new_tablename, table, colname) + tuple(selected_user_ids)                             
                 query = query % arguments
                 self.cursor.execute(query)
+                self.log("info", "Sample has been extracted for %s." % new_tablename)
                 
             # Mongo            
             # Discussion forum
@@ -135,7 +142,7 @@ class ExtractSample(baseservice.BaseService):
         return user_ids
     
     def sql_select_students(self, tablename=None, columns = []):
-        if tablename == None:
+        if tablename is None:
             tablename = 'certificates_generatedcertificate'
 
         # Counting the rows of the table
@@ -217,6 +224,40 @@ class ExtractSample(baseservice.BaseService):
             return result[0]
         except:
             print "Error: unable to fetch data"
+
+    # Remove all sample tables from mysql database if exist
+    def remove_exist_tables(self):
+        table_names = []
+
+        query = "SELECT table_name FROM information_schema.tables WHERE table_type = 'BASE TABLE' AND table_schema = '%s' AND table_name like '%%_sample'" % self.sql_dbname
+        self.cursor.execute(query)
+        result = self.cursor.fetchall()
+        if len(result) > 0:
+            for record in result:
+                table_names.append(record[0])
+            query = "DROP TABLE IF EXISTS " + ",".join(["%s"] * len(table_names))
+            query = query % tuple(table_names)
+            self.log("info", query)
+            self.cursor.execute(query)
+            self.sql_db.commit()
+
+    # Remove all sample collections from mongodb if exist
+    def remove_exist_collections(self):
+        # logs
+        self.mongo_dbname = "logs"
+        self.connect_to_mongo(self.mongo_dbname, "")
+        for col in self.mongo_db.collection_names():
+            if col.endswith("_sample"):
+                self.mongo_db.drop_collection(col)
+                self.log('info', 'Collection %s is deleted.' % col)
+
+        # Discussion forum
+        self.mongo_dbname = "discussion_forum"
+        self.connect_to_mongo(self.mongo_dbname, "")
+        for col in self.mongo_db.collection_names():
+            if col.endswith("_sample"):
+                self.mongo_db.drop_collection(col)
+                self.log('info', 'Collection %s is deleted.' % col)
 
 
 def name():

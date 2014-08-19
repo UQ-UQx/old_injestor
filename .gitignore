@@ -13,4 +13,8 @@ finished/
 config.py
 *.log
 
+
 logs/handler.log
+data/extractsample/backup/*
+data/personcourse/backup/*
+

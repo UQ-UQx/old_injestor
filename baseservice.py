@@ -219,10 +219,10 @@ class BaseService(object):
                 count += 1
         return count
     
-    # return the path of subsetbackup
+    # return the path of backup
     def get_backup_path(self):
         paths = getdatafilepaths(self.servicename)
-        return paths['subsetbackup']     
+        return paths['backup']
 
     # Moves the open file from incoming to finished, including subdirectories
     def movetofinish(self, prepend_date=False):
@@ -346,7 +346,7 @@ def getdatafilepaths(module_name):
     paths['process'] = os.path.join(thebasepath, 'data', module_name, 'process')
     paths['finished'] = os.path.join(thebasepath, 'data', module_name, 'finished')
 
-    if module_name == "extractsample":
-        paths['subsetbackup'] = os.path.join(thebasepath, 'data', module_name, 'subsetbackup')
+    if module_name in ["extractsample", "personcourse"]:
+        paths['backup'] = os.path.join(thebasepath, 'data', module_name, 'backup')
 
     return paths
