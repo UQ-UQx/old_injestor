@@ -275,7 +275,7 @@ class PersonCourse(baseservice.BaseService):
                 {"$match": {"context.course_id": pc_course_id}},
                 {"$sort": {"time": 1}},
                 {"$group": {"_id": "$context.user_id", "countrySet": {"$addToSet": "$country"}, "eventSum": {"$sum": 1}, "last_event": {"$last": "$time"}}}
-            ])['result']
+            ], allowDiskUse=True)['result']
 
             for item in user_events:
                 user_id = item["_id"]
