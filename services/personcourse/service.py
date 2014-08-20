@@ -223,7 +223,7 @@ class PersonCourse(baseservice.BaseService):
                     self.log("error", "Student id: %s does not exist in {auth_user}." % user_id)
 
             # Set attempted problems
-            self.log("info", "{auth_attempted_problems}")
+            self.log("info", "{attempted_problems: courseware_studentmodule}")
             query = "SELECT student_id, COUNT(state) FROM courseware_studentmodule WHERE state LIKE '%correct_map%' GROUP BY student_id"
             course_cursor.execute(query)
             result = course_cursor.fetchall()
