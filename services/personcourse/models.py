@@ -4,7 +4,7 @@ class PCModel(object):
 
     def __init__(self, course_id, user_id, registered=1, viewed=0, explored=0, certified=0, final_cc_cname="",
                  LoE="", YoB=None, gender="", grade=0, start_time="", last_event="", nevents=0, ndays_act=0,
-                 nplay_video=0, nchapters=0, nforum_posts=0, roles="", inconsistent_flag=0):
+                 nplay_video=0, nchapters=0, nforum_posts=0, roles="", attempted_problems=0, inconsistent_flag=0):
         self.course_id = course_id
         # todo
         self.user_id = user_id
@@ -25,6 +25,7 @@ class PCModel(object):
         self.nchapters = nchapters
         self.nforum_posts = nforum_posts
         self.roles = roles
+        self.attempted_problems = attempted_problems
         self.inconsistent_flag = inconsistent_flag
         pass
 
@@ -89,6 +90,9 @@ class PCModel(object):
     def set_roles(self, roles):
         self.roles = roles
 
+    def set_attempted_problems(self, attempted_problems):
+        self.attempted_problems = attempted_problems
+
     def set_inconsistent_flag(self):
         if self.nevents == 0 and (self.ndays_act + self.nplay_video + self.nchapters + self.nforum_posts) > 0:
             self.inconsistent_flag = 1
@@ -96,10 +100,10 @@ class PCModel(object):
             self.inconsistent_flag = 0
 
     def save2db(self, cursor, table):
-        parameters = table, self.course_id, self.user_id, self.registered, self.viewed, self.explored, self.certified, self.final_cc_cname, self.LoE, self.YoB, self.gender, self.grade, self.start_time, self.last_event, self.nevents, self.ndays_act, self.nplay_video, self.nchapters, self.nforum_posts, self.roles, self.inconsistent_flag
+        parameters = table, self.course_id, self.user_id, self.registered, self.viewed, self.explored, self.certified, self.final_cc_cname, self.LoE, self.YoB, self.gender, self.grade, self.start_time, self.last_event, self.nevents, self.ndays_act, self.nplay_video, self.nchapters, self.nforum_posts, self.roles, self.attempted_problems, self.inconsistent_flag
         #print parameters
 
-        query = "INSERT INTO %s (course_id, user_id, registered, viewed, explored, certified, final_cc_cname, LoE, YoB, gender, grade, start_time, last_event, nevents, ndays_act, nplay_video, nchapters, nforum_posts, roles, inconsistent_flag) VALUES ('%s', '%s', %d, %d, %d, %d, '%s', '%s', '%s', '%s', %f, '%s', '%s', %d, %d, %d, %d, %d, '%s', %d)" % parameters
+        query = "INSERT INTO %s (course_id, user_id, registered, viewed, explored, certified, final_cc_cname, LoE, YoB, gender, grade, start_time, last_event, nevents, ndays_act, nplay_video, nchapters, nforum_posts, roles, attempted_problems, inconsistent_flag) VALUES ('%s', '%s', %d, %d, %d, %d, '%s', '%s', '%s', '%s', %f, '%s', '%s', %d, %d, %d, %d, %d, '%s', %d, %d)" % parameters
         cursor.execute(query)
 
     def __repr__(self):
@@ -123,6 +127,7 @@ class PCModel(object):
         result += "nchapters " + str(self.nchapters) + ", "
         result += "nforum_posts " + str(self.nforum_posts) + ", "
         result += "roles " + str(self.roles) + ", "
+        result += "attempted_problems " + str(self.attempted_problems) + ", "
         result += "inconsistent_flag " + str(self.inconsistent_flag) + ", "
         #result += " " + str(self.) + ", "
         return result

@@ -113,6 +113,7 @@ class PersonCourse(baseservice.BaseService):
             {"col_name": "nchapters", "col_type": "int"},
             {"col_name": "nforum_posts", "col_type": "int"},
             {"col_name": "roles", "col_type": "varchar(255)"},
+            {"col_name": "attempted_problems", "col_type": "int"},
             #{"col_name": "inconsistent_flag", "col_type": "TINYINT(1)"}
         ]
         query = "CREATE TABLE IF NOT EXISTS " + tablename
@@ -218,6 +219,18 @@ class PersonCourse(baseservice.BaseService):
                     pc_dict[user_id].set_ndays_act(record[1])
                     if record[1] > 0:
                         pc_dict[user_id].set_viewed(1)
+                else:
+                    self.log("error", "Student id: %s does not exist in {auth_user}." % user_id)
+
+            # Set attempted problems
+            self.log("info", "{auth_attempted_problems}")
+            query = "SELECT student_id, COUNT(state) FROM courseware_studentmodule WHERE state LIKE '%correct_map%' GROUP BY student_id"
+            course_cursor.execute(query)
+            result = course_cursor.fetchall()
+            for record in result:
+                user_id = int(record[0])
+                if user_id in pc_dict:
+                    pc_dict[user_id].set_attempted_problems(record[1])
                 else:
                     self.log("error", "Student id: %s does not exist in {auth_user}." % user_id)
 
