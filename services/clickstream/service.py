@@ -44,10 +44,11 @@ class Clickstream(baseservice.BaseService):
         #load a file
         self.status['progress']['total'] = str(self.numfiles() + 20)
         self.status['progress']['current'] = 1
+        self.set_indexes()
         while self.load_incoming_file():
             if self.validclickstreamlog(self.filepath,self.filename):
                 self.setaction('importing log '+self.filename)
-
+                self.set_indexes()
                 #Check whether its a valid date
                 filedate = self.filenametodate(self.filename)
                 if filedate == maxdates[self.filepath]:
@@ -65,6 +66,17 @@ class Clickstream(baseservice.BaseService):
             self.movetofinish()
         self.reset_cache('clickstream')
         self.status['progress']['current'] += 20
+
+    def set_indexes(self):
+        print "Setting index for countries"
+        cmd = "mongo --eval \"db['logs'].clickstream.ensureIndex({country:1})\""
+        os.system(cmd)
+        print "Setting index for event-course"
+        cmd = "mongo --eval \"db['logs'].clickstream.ensureIndex( {event_type: 1,'context.course_id': 1} )\""
+        os.system(cmd)
+        print "Setting index for course"
+        cmd = "mongo --eval \"db['logs'].clickstream.ensureIndex( {'context.course_id': 1} )\""
+        os.system(cmd)
 
     def checkwritten(self, filepath, filename):
         paths = baseservice.getdatafilepaths(self.servicename)
