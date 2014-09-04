@@ -5,7 +5,9 @@ class CFModel(object):
 
     def __init__(self, course, dbname, mongoname, discussiontable, registration_open_date="", course_launch_date="",
                  course_close_date="", nregistered_students=0, nviewed_students=0, nexplored_students=0, ncertified_students=0,
-                 nhonor_students=0, naudit_students=0, nvertified_students=0, course_effort=0, course_length=0, nchapters=0,
+                 nhonor_students=0, naudit_students=0, nvertified_students=0, nhonor_before=0, naudit_before=0, nvertified_before=0,
+                 nhonor_during=0, naudit_during=0, nvertified_during=0, nhonor_after=0, naudit_after=0, nvertified_after=0,
+                 course_effort=0, course_length=0, nchapters=0,
                  nvideos=0, nhtmls=0, nassessments=0, nsummative_assessments=0, nformative_assessments=0, nincontent_discussions=0,
                  nactivities=0, best_assessment="", worst_assessment=""):
         self.course = course
@@ -22,6 +24,15 @@ class CFModel(object):
         self.nhonor_students = nhonor_students
         self.naudit_students = naudit_students
         self.nvertified_students = nvertified_students
+        self.nhonor_before = nhonor_before
+        self.naudit_before = naudit_before
+        self.nvertified_before = nvertified_before
+        self.nhonor_during = nhonor_during
+        self.naudit_during = naudit_during
+        self.nvertified_during = nvertified_during
+        self.nhonor_after = nhonor_after
+        self.naudit_after = naudit_after
+        self.nvertified_after = nvertified_after
         self.course_effort = course_effort
         self.course_length = course_length
         self.nchapters = nchapters
@@ -63,6 +74,33 @@ class CFModel(object):
     def set_nvertified_students(self, nvertified):
         self.nvertified_students = nvertified
 
+    def set_nhonor_before(self, nhonor_before):
+        self.nhonor_before = nhonor_before
+
+    def set_naudit_before(self, naudit_before):
+        self.naudit_before = naudit_before
+
+    def set_nvertified_before(self, nvertified_before):
+        self.nvertified_before = nvertified_before
+
+    def set_nhonor_during(self, nhonor_during):
+        self.nhonor_during = nhonor_during
+
+    def set_naudit_during(self, naudit_during):
+        self.naudit_during = naudit_during
+
+    def set_nvertified_during(self, nvertified_during):
+        self.nvertified_during = nvertified_during
+
+    def set_nhonor_after(self, nhonor_after):
+        self.nhonor_after = nhonor_after
+
+    def set_naudit_after(self, naudit_after):
+        self.naudit_after = naudit_after
+
+    def set_nvertified_after(self, nvertified_after):
+        self.nvertified_after = nvertified_after
+
     def set_registration_open_date(self, registration_open_date):
         self.registration_open_date = registration_open_date
 
@@ -94,9 +132,28 @@ class CFModel(object):
         self.nactivities = nactivities
 
     def save2db(self, cursor, table):
-        parameters = table, self.course, self.dbname, self.mongoname, self.discussiontable, self.registration_open_date, self.course_launch_date, self.course_close_date, self.nregistered_students, self.nviewed_students, self.nexplored_students, self.ncertified_students, self.nhonor_students, self.naudit_students, self.nvertified_students, self.course_effort, self.course_length, self.nchapters, self.nvideos, self.nhtmls, self.nassessments, self.nsummative_assessments, self.nformative_assessments, self.nincontent_discussions, self.nactivities, self.best_assessment, self.worst_assessment
+        parameters = (table, self.course, self.dbname, self.mongoname, self.discussiontable, self.registration_open_date,
+                      self.course_launch_date, self.course_close_date, self.nregistered_students, self.nviewed_students,
+                      self.nexplored_students, self.ncertified_students, self.nhonor_students, self.naudit_students,
+                      self.nvertified_students, self.nhonor_before, self.naudit_before, self.nvertified_before,
+                      self.nhonor_during, self.naudit_during, self.nvertified_during,
+                      self.nhonor_after, self.naudit_after, self.nvertified_after,
+                      self.course_effort, self.course_length, self.nchapters, self.nvideos,
+                      self.nhtmls, self.nassessments, self.nsummative_assessments, self.nformative_assessments,
+                      self.nincontent_discussions, self.nactivities, self.best_assessment, self.worst_assessment)
 
-        query = "INSERT INTO %s (course, dbname, mongoname, discussiontable, registration_open_date, course_launch_date, course_close_date, nregistered_students, nviewed_students, nexplored_students, ncertified_students, nhonor_students, naudit_students, nvertified_students, course_effort, course_length, nchapters, nvideos, nhtmls, nassessments, nsummative_assessments, nformative_assessments, nincontent_discussions, nactivities, best_assessment, worst_assessment) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d, %d, %d, %d, %d, %d, %f, %d, %d, %d, %d, %d, %d, %d, %d, %d, '%s', '%s')" % parameters
+        query = "INSERT INTO %s (course, dbname, mongoname, discussiontable, registration_open_date," \
+                " course_launch_date, course_close_date, nregistered_students, nviewed_students," \
+                " nexplored_students, ncertified_students, nhonor_students, naudit_students," \
+                " nvertified_students, nhonor_before, naudit_before, nvertified_before," \
+                " nhonor_during, naudit_during, nvertified_during," \
+                " nhonor_after, naudit_after,  nvertified_after," \
+                " course_effort, course_length, nchapters, nvideos," \
+                " nhtmls, nassessments, nsummative_assessments, nformative_assessments," \
+                " nincontent_discussions, nactivities, best_assessment, worst_assessment) " \
+                "VALUES " \
+                "('%s', '%s', '%s', '%s', '%s', '%s', '%s', %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, " \
+                "%d, %d, %d, %f, %d, %d, %d, %d, %d, %d, %d, %d, %d, '%s', '%s')" % parameters
         #print query
         cursor.execute(query)
 
@@ -234,10 +291,18 @@ class PCModel(object):
             self.inconsistent_flag = 0
 
     def save2db(self, cursor, table):
-        parameters = table, self.course_id, self.user_id, self.registered, self.viewed, self.explored, self.certified, self.final_cc_cname, self.LoE, self.YoB, self.gender, self.mode, self.grade, self.start_time, self.last_event, self.nevents, self.ndays_act, self.nplay_video, self.nchapters, self.nforum_posts, self.roles, self.attempted_problems, self.inconsistent_flag
+        parameters = (table, self.course_id, self.user_id, self.registered, self.viewed, self.explored, self.certified,
+                      self.final_cc_cname, self.LoE, self.YoB, self.gender, self.mode, self.grade, self.start_time,
+                      self.last_event, self.nevents, self.ndays_act, self.nplay_video, self.nchapters, self.nforum_posts,
+                      self.roles, self.attempted_problems, self.inconsistent_flag)
         #print parameters
 
-        query = "INSERT INTO %s (course_id, user_id, registered, viewed, explored, certified, final_cc_cname, LoE, YoB, gender, mode, grade, start_time, last_event, nevents, ndays_act, nplay_video, nchapters, nforum_posts, roles, attempted_problems, inconsistent_flag) VALUES ('%s', '%s', %d, %d, %d, %d, '%s', '%s', '%s', '%s', '%s', %f, '%s', '%s', %d, %d, %d, %d, %d, '%s', %d, %d)" % parameters
+        query = "INSERT INTO %s (course_id, user_id, registered, viewed, explored, certified," \
+                " final_cc_cname, LoE, YoB, gender, mode, grade, start_time," \
+                " last_event, nevents, ndays_act, nplay_video, nchapters, nforum_posts," \
+                " roles, attempted_problems, inconsistent_flag)" \
+                " VALUES ('%s', '%s', %d, %d, %d, %d, '%s', '%s', '%s', '%s', '%s', %f," \
+                " '%s', '%s', %d, %d, %d, %d, %d, '%s', %d, %d)" % parameters
         cursor.execute(query)
 
     def __repr__(self):

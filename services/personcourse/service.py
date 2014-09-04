@@ -154,6 +154,15 @@ class PersonCourse(baseservice.BaseService):
             {"col_name": "nhonor_students", "col_type": "int"},
             {"col_name": "naudit_students", "col_type": "int"},
             {"col_name": "nvertified_students", "col_type": "int"},
+            {"col_name": "nhonor_before", "col_type": "int"},
+            {"col_name": "naudit_before", "col_type": "int"},
+            {"col_name": "nvertified_before", "col_type": "int"},
+            {"col_name": "nhonor_during", "col_type": "int"},
+            {"col_name": "naudit_during", "col_type": "int"},
+            {"col_name": "nvertified_during", "col_type": "int"},
+            {"col_name": "nhonor_after", "col_type": "int"},
+            {"col_name": "naudit_after", "col_type": "int"},
+            {"col_name": "nvertified_after", "col_type": "int"},
             {"col_name": "course_effort", "col_type": "float"},
             {"col_name": "course_length", "col_type": "int"},
             {"col_name": "nchapters", "col_type": "int"},
@@ -199,12 +208,12 @@ class PersonCourse(baseservice.BaseService):
             cf_item = CFModel(course_id, course['dbname'], course['mongoname'], course['discussiontable'])
             # Set cf_item course_launch_date
             if 'start' in courseinfo:
-                course_launch_time = dateutil.parser.parse(courseinfo['start'])
+                course_launch_time = dateutil.parser.parse(courseinfo['start']).replace(tzinfo=None)
                 course_launch_date = course_launch_time.date()
                 cf_item.set_course_launch_date(course_launch_date)
             # Set cf_item course_close_date
             if 'end' in courseinfo:
-                course_close_time = dateutil.parser.parse(courseinfo['end'])
+                course_close_time = dateutil.parser.parse(courseinfo['end']).replace(tzinfo=None)
                 course_close_date = course_close_time.date()
                 cf_item.set_course_close_date(course_close_date)
             # Set cf_item course_length
@@ -288,6 +297,15 @@ class PersonCourse(baseservice.BaseService):
             nhonor = 0
             naudit = 0
             nvertified = 0
+            nhonor_before = 0
+            naudit_before = 0
+            nvertified_before = 0
+            nhonor_during = 0
+            naudit_during = 0
+            nvertified_during = 0
+            nhonor_after = 0
+            naudit_after = 0
+            nvertified_after = 0
             registration_open_date = datetime.date.today()
             for record in result:
                 user_id = int(record[0])
@@ -297,16 +315,46 @@ class PersonCourse(baseservice.BaseService):
                 pc_dict[user_id].set_mode(record[2])
                 if record[2] == 'honor':
                     nhonor += 1
+                    if course_launch_time and course_close_time:
+                        if start_time < course_launch_time:
+                            nhonor_before += 1
+                        elif start_time > course_close_time:
+                            nhonor_after += 1
+                        else:
+                            nhonor_during += 1
                 if record[2] == 'audit':
                     naudit += 1
+                    if course_launch_time and course_close_time:
+                        if start_time < course_launch_time:
+                            naudit_before += 1
+                        elif start_time > course_close_time:
+                            naudit_after += 1
+                        else:
+                            naudit_during += 1
                 if record[2] == 'verified':
                     nvertified += 1
+                    if course_launch_time and course_close_time:
+                        if start_time < course_launch_time:
+                            nvertified_before += 1
+                        elif start_time > course_close_time:
+                            nvertified_after += 1
+                        else:
+                            nvertified_during += 1
                 if start_date < registration_open_date:
                     registration_open_date = start_date
             # Set cf_item nhonor_students, naudit_students, nvertified_students, registration_open_date
             cf_item.set_nhonor_students(nhonor)
             cf_item.set_naudit_students(naudit)
             cf_item.set_nvertified_students(nvertified)
+            cf_item.set_nhonor_before(nhonor_before)
+            cf_item.set_naudit_before(naudit_before)
+            cf_item.set_nvertified_before(nvertified_before)
+            cf_item.set_nhonor_during(nhonor_during)
+            cf_item.set_naudit_during(naudit_during)
+            cf_item.set_nvertified_during(nvertified_during)
+            cf_item.set_nhonor_after(nhonor_after)
+            cf_item.set_naudit_after(naudit_after)
+            cf_item.set_nvertified_after(nvertified_after)
             cf_item.set_registration_open_date(registration_open_date)
 
             # Set ndays_act and viewed based on the data in {courseware_studentmodule}
