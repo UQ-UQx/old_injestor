@@ -8,7 +8,7 @@ pymongo==2.6.3
 python-dateutil==2.1
 python-memcached==1.53
 python-termstyle==0.1.10
-requests==2.2.1
+requests==2.20.0
 simplejson==3.3.3
 sqlparse==0.1.10
 ua-parser==0.3.5
